@@ -1,0 +1,104 @@
+p {
+	margin: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('img/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.overlay {
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(51, 51, 56, 0.8);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('img/logo.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 80vw;
+	height: 100%;
+}
+
+.white {
+	color: #fff;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.four {
+	font-size: 13rem;
+	color: #FFBE08;
+}
+
+.ops {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+} 
+
+.nopage {
+	margin-bottom: 1.5rem;
+}
+
+.nopage, .button {
+	font-size: 2rem;
+}
+
+.button {
+	background-color: #FFBE08;
+	padding: 0.4rem 1.1rem;
+	text-decoration: none;
+	color: #333338;
+	border-radius: 50px;
+	margin-bottom: 8rem;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: #FFBE08;
+	background-color: #333338;
+}
+
+@media screen and (max-width: 550px) {
+	.four {
+		font-size: 5rem;
+	}
+
+	.ops {
+		font-size: 2rem;
+	}
+
+	.nopage, .button {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 395px) {
+	.nopage, .button {
+		font-size: 1rem;
+	}
+}
