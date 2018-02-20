@@ -1,6 +1,7 @@
 .container {
 	font-size: 2rem;
 	font-family: sans-serif;
+	font-weight: 300;
 }
 
 .image-block__element {
