@@ -1,0 +1,68 @@
+:root {
+  --person__text--bg-grey: #4E4D5C;
+  --person__text--bg-black: #333338;
+}
+
+html {
+
+}
+
+.person {
+  width: 50vw;
+  margin: 7rem auto;
+}
+.person__name {
+  font-size: 2rem;
+}
+
+.person__image, .person__name, .person__text {
+  display: block;
+}
+
+.person__image {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.person--left .person__image {
+  bottom: 67%;
+  right: 87%;
+}
+
+.person--right .person__image {
+  bottom: 67%;
+  left: 87%;
+}
+
+.person__image--agne {background-image: url('images/agne.jpg');}
+.person__image--aiste {background-image: url('images/aiste.jpg');}
+.person__image--alicija {background-image: url('images/alicija.jpg');}
+.person__image--gabriele {background-image: url('images/gabriele.jpg');}
+.person__image--indre {background-image: url('images/indre.jpg');}
+.person__image--karolina {background-image: url('images/karolina.jpg');}
+.person__image--kasparas {background-image: url('images/kasparas.jpg');}
+.person__image--kristina {background-image: url('images/kristina.jpg');}
+.person__image--nike {background-image: url('images/nike.jpg');}
+.person__image--nora {background-image: url('images/nora.jpg');}
+.person__image--paule {background-image: url('images/paule.jpg');}
+.person__image--vitalija {background-image: url('images/vitalija.jpg');}
+.person__image--zivile {background-image: url('images/zivile.jpg');}
+
+.person__text {
+  position: relative;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  padding: 5rem 10rem;
+  text-align: left;
+}
+
+.person--left .person__text {
+  background: var(--person__text--bg-grey);
+}
+
+.person--right .person__text {
+  background: var(--person__text--bg-black);
+}
