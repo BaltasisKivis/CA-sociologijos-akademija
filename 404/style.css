@@ -2,3 +2,8 @@
 	font-size: 2rem;
 	font-family: sans-serif;
 }
+
+.image-block__element {
+	width: 20vw;
+	height: 50vh;
+}
