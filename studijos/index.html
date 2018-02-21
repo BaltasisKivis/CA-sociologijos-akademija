@@ -24,18 +24,18 @@
             <div class="nav-item dropdown">
                 <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">APIE MUS</a>
-                    <a class="dropdown-item" href="#">KOMANDA</a>
+                    <a class="dropdown-item" href="apie-mus/index.html">APIE MUS</a>
+                    <a class="dropdown-item" href="komanda/index.html">KOMANDA</a>
                 </div>
             </div>
-            <a href="" class="nav-item nav-link navigation__item">renginiai</a>
-            <a href="" class="nav-item nav-link navigation__item">galerija</a>
+            <a href="renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
+            <a href="galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
             <div class="nav-item nav-link navigation__logo">
                 <img src="media/logo.svg" alt="">
             </div>
-            <a href="" class="nav-item nav-link navigation__item">studijos</a>
-            <a href="" class="nav-item nav-link navigation__item">blogas</a>
-            <a href="" class="nav-item nav-link navigation__item">atsiliepimai</a>
+            <a href="studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
+            <a href="blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
+            <a href="interviu-su-sociologais/index.html" class="nav-item nav-link navigation__item">atsiliepimai</a>
             <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
         </div>
     </div>
@@ -85,7 +85,7 @@
         <p class="circle"></p>
     </div>
 
-    <div class="universitetai">
+    <section class="universitetai">
         <h2>Universitetai</h2>
         <div class="uni_visi">
             <a class="VU" href="https://www.vu.lt/studijos/studiju-programos/bakalauro-studijos/programa/2065-sociologija" target="_blank">
@@ -98,9 +98,9 @@
                 <p>Kauno Technologijų <br> Universitetas</p>
             </a>
         </div>
-    </div>
+    </section>
 
-    <div class="stojimu_balai">
+    <section class="stojimu_balai">
         <h4>Stojimų balai</h4>
         <div class="balu_lentele row">
             <div class="balai_2017 col">
@@ -157,20 +157,20 @@
         <div class="skaiciuok_balus">
             <a href="http://lamabpo.lt/" target="_blank">Pasiskaičiuok savo balą</a>
         </div>
-    </div>
+    </section>
 
-    <div class="kontaktu_forma">
+    <section class="kontaktu_forma">
         <form>
             <h2>Turi klausimų? Klausk!</h2>Vardas<br>
             <input type="text" name="firstname"><br>El. paštas<br>
             <input type="email" name="lastname"><br>Klausimas<br>
-            <textarea name="message" rows="15" cols="80"></textarea>
+            <textarea name="message" rows="10" cols="80"></textarea>
             <br>
         </form>
         <div class="submit_button">
             <input class="button" type="submit" value="Siųsti">
         </div>
-    </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -178,8 +178,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
-<footer>
-
+<footer class="container-fluid">
+    <p class="h2 text-center">KONTAKTAI</p>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+            <div class="media d-flex align-items-center">
+                <div class="point"></div>
+                <div class="wid">
+                    <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br> Universiteto g. 9/1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+            <div class="media d-flex align-items-center">
+                <div class="mail"></div>
+                <div class="wid">
+                    <p class="margin-bottom">www.fsf.vu.lt</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+            <div class="media d-flex align-items-center">
+                <div class="face"></div>
+                <div class="wid">
+                    <p class="margin-bottom">FB: Sociologijos akademija</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+            <div class="media d-flex align-items-center">
+                <div class="mail"></div>
+                <div class="wid">
+                    <p class="margin-bottom">tel.: +370 000 00000</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </html>

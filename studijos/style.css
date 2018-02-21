@@ -150,7 +150,8 @@ p {
   align-items: center; }
   .universitetai h2 {
     margin-bottom: 2rem;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-weight: 600; }
 
 .uni_visi {
   display: flex;
@@ -211,10 +212,12 @@ p {
     justify-content: center; }
     .stojimu_balai .balu_lentele h4 {
       margin-top: 3rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      font-weight: 600; }
   .stojimu_balai h4 {
     margin-top: 3rem;
-    text-align: center; }
+    text-align: center;
+    font-weight: 600; }
   .stojimu_balai .balai_paprasti {
     width: 25px;
     background-color: white;
@@ -233,9 +236,10 @@ p {
     flex-direction: column;
     align-items: flex-start;
     align-self: flex-start;
-    width: 130%; }
+    width: 125%; }
   .stojimu_balai .skaiciuok_balus {
     margin: 3rem;
+    margin-bottom: 6rem;
     text-align: center; }
     .stojimu_balai .skaiciuok_balus a {
       color: black;
@@ -247,7 +251,9 @@ p {
   margin-top: 3rem;
   margin-left: 10rem; }
   .kontaktu_forma form h2 {
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem; }
   .kontaktu_forma form input {
     margin-bottom: 1rem;
     width: 25%;
@@ -259,7 +265,9 @@ p {
 .kontaktu_forma .submit_button {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  font-weight: 300;
+  height: 35vh; }
   .kontaktu_forma .submit_button .button {
     width: 100px;
     height: 30px;
@@ -269,9 +277,51 @@ p {
     margin: 3rem;
     border: 0px solid #FFBE08; }
 
-footer {
-  height: 15vh;
-  background-color: black; }
+.container-fluid {
+  color: #fff;
+  background-color: #4E4D5C;
+  padding-bottom: 3rem;
+  background-image: url("media/linijos-footer.svg");
+  background-repeat: no-repeat; }
+
+.container-fluid .h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.container-fluid .point {
+  background-image: url("media/point.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem; }
+
+.container-fluid .mail {
+  background-image: url("media/mail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem; }
+
+.container-fluid .face {
+  background-image: url("media/face.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem; }
+
+.point,
+.mail,
+.face {
+  padding-right: 1rem;
+  margin-right: 1rem; }
+
+.margin-bottom {
+  margin-bottom: 0; }
+
+.center-me {
+  text-align: center; }
 
 @media screen and (max-width: 820px) {
   .page__name {
@@ -330,6 +380,8 @@ footer {
   .balai_2018 {
     order: 1; }
   .stojimu_balai .col {
+    width: 100%; }
+  .stojimu_balai .balai_apacia {
     width: 100%; }
   .kontaktu_forma form h2 {
     margin-bottom: 2rem;
@@ -391,7 +443,14 @@ footer {
     background-color: #FFBE08;
     width: 50%;
     left: 0;
-    font-size: 1em; } }
+    font-size: 1em; }
+  .media {
+    justify-content: space-between;
+    width: 18rem; }
+  .wid {
+    width: 12rem; }
+  .center-me {
+    text-align: left; } }
 
 .modal-content {
   padding: 3em; }
