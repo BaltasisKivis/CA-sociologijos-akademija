@@ -1,21 +1,53 @@
 .container-fluid {
   color: #fff;
-  background-color: #4E4D5C; }
+  background-color: #4E4D5C;
+  padding-bottom: 3rem;
+  background-image: url('linijos-footer.svg');
+  background-repeat: no-repeat; }
+  
   .container-fluid .h2 {
     padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold; }
   .container-fluid .point {
     background-image: url("point.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 2rem;
     height: 2rem; }
   .container-fluid .mail {
     background-image: url("mail.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 2rem;
     height: 2rem; }
   .container-fluid .face {
     background-image: url("face.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 2rem;
     height: 2rem; }
+.point, .mail, .face {
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+.margin-bottom {
+  margin-bottom: 0;
+}
+.center-me {
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .media {
+    justify-content: space-between;
+    width: 18rem;
+  }
+  .wid {
+    width: 12rem;
+  }
+  .center-me {
+    text-align: left;
+  }
+}
