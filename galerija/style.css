@@ -258,7 +258,8 @@ body {
           font-size: 1.8rem; }
 
 main {
-  padding-top: 4.5rem; }
+  padding-top: 4.5rem;
+  padding-bottom: 10rem; }
   main .sectionPhotos {
     margin-top: 4.5rem; }
   main section {
@@ -276,12 +277,27 @@ main {
       display: flex;
       flex-wrap: wrap; }
       main section .gallery .gallery__item {
-        margin: 1rem; }
+        margin: 1rem;
+        position: relative;
+        overflow: hidden; }
+      main section .gallery a {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
       main section .gallery .gallery__item:hover {
         -webkit-transform: scale(1.1, 1.1);
                 transform: scale(1.1, 1.1); }
+      main section .gallery .gallery__item--daugiau {
+        position: absolute;
+        color: white;
+        z-index: 1; }
       main section .gallery img {
         width: 23rem; }
+      main section .gallery .gallery__item--lastImg {
+        -webkit-filter: blur(4px);
+                filter: blur(4px);
+        border: 1px solid black;
+        z-index: 0; }
 
 @media (max-width: 1799px) {
   main section .containerGallery {
