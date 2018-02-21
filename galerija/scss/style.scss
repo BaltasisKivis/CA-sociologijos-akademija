@@ -73,7 +73,7 @@ section {
     }
 
     .containerGallery {
-        margin: 0 10vw;
+        margin: 0 10%;
     }
     
     .gallery {
@@ -94,8 +94,56 @@ section {
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1799px) {
+    section {
+
+        .containerGallery {
+            max-width: 70rem;
+    
+            h3 {
+                margin:2rem 1rem 2rem 1rem;
+            }
+
+            .gallery__item {
+                width: 46%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+    
+}
+
+@media (max-width: 1000px) {
     :root {
         font-size: calc(0.4vw + 12px);
+    }
+    
+    section {
+        
+        .containerGallery {
+            max-width: 50rem;
+            margin: 0 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .gallery {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .gallery__item {
+                    width: auto;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
