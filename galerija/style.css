@@ -163,6 +163,9 @@ body {
     left: 0;
     font-size: 1em; } }
 
+.modal {
+  font-size: 16px; }
+
 .modal-content {
   padding: 3em; }
 
@@ -256,56 +259,51 @@ body {
 
 main {
   padding-top: 4.5rem; }
-
-.sectionPhotos {
-  margin-top: 4.5rem; }
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  section h2 {
-    font-size: 4rem; }
-  section h3 {
-    margin: 2rem 1rem 4rem 1rem; }
-  section .containerGallery {
-    margin: 0 10%; }
-  section .gallery {
+  main .sectionPhotos {
+    margin-top: 4.5rem; }
+  main section {
     display: flex;
-    flex-wrap: wrap; }
-    section .gallery .gallery__item {
-      margin: 1rem; }
-    section .gallery .gallery__item:hover {
-      -webkit-transform: scale(1.1, 1.1);
-              transform: scale(1.1, 1.1); }
-    section .gallery img {
-      width: 23rem; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main section h2 {
+      font-size: 4rem; }
+    main section h3 {
+      margin: 2rem 1rem 4rem 1rem; }
+    main section .containerGallery {
+      margin: 0 10%; }
+    main section .gallery {
+      display: flex;
+      flex-wrap: wrap; }
+      main section .gallery .gallery__item {
+        margin: 1rem; }
+      main section .gallery .gallery__item:hover {
+        -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1); }
+      main section .gallery img {
+        width: 23rem; }
 
 @media (max-width: 1799px) {
-  section .containerGallery {
+  main section .containerGallery {
     max-width: 70rem; }
-    section .containerGallery h3 {
+    main section .containerGallery h3 {
       margin: 2rem 1rem 2rem 1rem; }
-    section .containerGallery .gallery__item {
+    main section .containerGallery .gallery__item {
       width: 46%; }
-      section .containerGallery .gallery__item img {
+      main section .containerGallery .gallery__item img {
         width: 100%; } }
 
 @media (max-width: 1000px) {
   :root {
     font-size: calc(0.4vw + 12px); }
-  section .containerGallery {
+  main section .containerGallery {
     max-width: 50rem;
     margin: 0 5%;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    section .containerGallery .gallery {
+    main section .containerGallery .gallery {
       display: flex;
-      flex-direction: column;
-      width: 100%; }
-      section .containerGallery .gallery .gallery__item {
-        width: auto; }
-      section .containerGallery .gallery img {
-        width: 100%; } }
+      flex-direction: column; }
+      main section .containerGallery .gallery img {
+        width: 85vw; } }
