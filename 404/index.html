@@ -8,16 +8,85 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style-404.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-expand-lg navigation">
+		<div class="navigation__logo navigation__logo--small">
+			<img src="logo.svg" alt="">
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+			<div class="navbar-nav navigation__group">
+				<div class="nav-item dropdown">
+					<a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="../apie-mus/index.html">APIE MUS</a>
+						<a class="dropdown-item" href="../komanda/index.html">KOMANDA</a>
+					</div>
+				</div>
+					<a href="../renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
+					<a href="../galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
+					<div class="nav-item nav-link navigation__logo">
+						<img src="logo.svg" alt="">
+					</div>
+					<a href="../studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
+					<a href="../blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
+					<a href="#atsiliepimai" class="nav-item nav-link navigation__item">atsiliepimai</a>
+					<a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+			</div>
+		</div>
+		<button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+	</nav>
+
+
+
+<div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Vardas:</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Pavardė:</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+            <input type="text" class="form-control" required>
+          </div>
+			<input type="submit" value="SIŲSTI" class="modal-button">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- 404 -->
 	<main class="overlay">
 		<div class="logo">
 			<p class="four bold">404</p>
 			<p class="ops white bold">Ooops...</p>
 			<p class="nopage white">Puslapio, kurio ieškote, nėra!</p>
-			<a class="button" href="#">Grįžk į pagrindinį puslapį</a>
+			<a class="button" href="../homepage/index.html">Grįžk į pagrindinį puslapį</a>
 		</div>
 	</main>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
