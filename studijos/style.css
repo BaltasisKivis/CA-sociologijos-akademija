@@ -183,13 +183,13 @@ p {
     margin-bottom: 0.5rem; }
 
 .VU {
-  background-image: url("/media/VU.jpg"); }
+  background-image: url("media/VU.jpg"); }
 
 .VDU {
-  background-image: url("/media/VDU.jpg"); }
+  background-image: url("media/VDU.jpg"); }
 
 .KTU {
-  background-image: url("/media/KU.jpg");
+  background-image: url("media/KU.jpg");
   background-position: left; }
 
 .stojimu_balai {
