@@ -1,34 +1,115 @@
-*{
+html{
   box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
 }
 
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Relaway', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
 }
 
 .blog{
-  position: absolute;
+  margin-top: 5rem;
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 80vh;
+  background-image: url("images/Party_blog_post_tituline.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
 }
 
-.blog-main-image{
+.blog-overlay{
+  margin-top: 5rem;
+  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
-  opacity: rgba(255, 255, 255, 0.5);
-  z-index: -1;
+  heigh
 }
 
 .blog-breadcrumbs{
-  position: relative;
-  z-index: 1;
-  top: 50px;
-  left: 200px;
   text-decoration: none;
-  display: inline;
   color: white;
-  font-size: 14;
+  font-size: 0.9em;
+  font-weight: normal;
+  list-style-type: none;
+  padding-left: 13%;
+  padding-top: 5%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog-breadcrumbs i{
+  font-size: 0.8em;
+  margin: 0 5px;
+}
+
+.blog-breadcrumbs a{
+  color: white;
+  text-decoration: none;
+}
+
+.blog-heading{
+  padding-left: 22%;
+  display: flex;
+  color: white;
+  font-size: 2.6em;
+  font-weight: 800;
+}
+
+.blog-post{
+  margin: 2% 22%;
+  font-size: 1em;
+  font-weight: lighter;
+  color: grey;
+  line-height: 1.6;
+}
+
+.yellow-box{
+  margin: 60px 0;
+  padding: 5px 150px;
+  background-color: #FFBe08;
+  color: #4e4d5c;
+  filter: drop-shadow(0px 0px 30px silver);
+}
+
+.yellow-box p{
+  line-height: 2;
+}
+
+.citata{
+  color: white;
+  background-color: #4e4d5c;
+  margin: 60px 0;
+  padding: 5px 150px;
+}
+
+p a{
+  color: grey;
+}
+
+.arrows{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.arrows p{
+  font-size: 1em;
+  color: grey;
+}
+
+.arrows i{
+  font-size: 1.5em;
+  color: #333338;
+  margin: 5px;
+  cursor: pointer;
 }
