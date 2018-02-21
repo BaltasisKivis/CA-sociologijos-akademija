@@ -91,7 +91,7 @@ body {
 .dropdown-menu {
   background-color: #333338;
   position: absolute;
-  top: 60px;
+  top: 53px;
   border-radius: 0; }
 
 .dropdown-item {
@@ -136,7 +136,9 @@ body {
 
 @media (max-width: 1300px) {
   .navigation__group, .navigation__button {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .dropdown-menu {
+    top: 50px; } }
 
 @media (max-width: 1200px) {
   .navigation__group, .navigation__button {
@@ -147,7 +149,9 @@ body {
     font-size: 0.79em; }
   .navigation__button {
     font-size: 0.79em;
-    width: 150px; } }
+    width: 150px; }
+  .dropdown-menu {
+    top: 48px; } }
 
 @media (max-width: 991px) {
   .navigation__group {
