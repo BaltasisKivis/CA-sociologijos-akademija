@@ -8,57 +8,53 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 .header {
+  position: relative;
+  top: 4.5rem;
+  width: 100%;
+  height: 62vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem;
   background-image: url('images/top.jpg');
   background-size: cover;
-  position: relative;
   filter: contrast(150%);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--person__text--bg-grey);
+  opacity: 0.7;
   z-index: -1;
-  top: 4.5rem;
-  margin-bottom: 13.5rem;
-
-}
-.overlay {
-  background: var(--person__text--bg-black);
-  opacity: 0.5;
-
-
-}
-.header, .overlay {
-  position: relative;
-  width: 100vw;
-  height: 446px;
-
 }
 
 .header h2 {
-  position: absolute;
   color: var(--main__text--tx-color);
-  font-size: 3rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  font-size: 2.5rem;
+  font-weight: 500;
+  z-index: 1; }
 
 .person {
   width: 65vw;
-  margin: 7rem auto;
-}
+  margin: 7rem auto; }
 
 .person__image, .person__name, .person__text {
-  display: block;
-}
+  display: block; }
 
 .person__name h3 {
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
 .person__image {
   position: absolute;
   width: 180px;
   height: 180px;
   background-size: cover;
-  z-index: -1;
-}
+  z-index: -1; }
 
 .person--left .person__image {
   top: -75px;
@@ -127,7 +123,8 @@ body {
   height: 4.5rem;
   text-transform: uppercase;
   padding: 0;
-  font-size: 13px; }
+  font-size: 13px;
+  z-index: 50; }
 
 .navigation__logo {
   display: none;
@@ -232,13 +229,15 @@ body {
   .navigation__logo--small {
     display: none; }
   .navigation {
-    justify-content: center; } }
+    justify-content: center; }
+   }
 
 @media (max-width: 1300px) {
+  .header {
+    height: 73vh;
+  }
   .navigation__group, .navigation__button {
     font-size: 1em; }
-  .header, .overlay {
-    height: 423px; }
   .dropdown-menu {
     top: 50px; }
   .person__image {
@@ -247,10 +246,10 @@ body {
     } }
 
 @media (max-width: 1200px) {
+  .header {
+    height: 68vh; }
   .navigation__group, .navigation__button {
     font-size: 0.92em; }
-    .header, .overlay {
-      height: 400px; }
   .person__image {
     width: 160px;
     height: 160px;}
@@ -262,6 +261,8 @@ body {
     right: -45px;} }
 
 @media (max-width: 1100px) {
+  .header {
+    height: 62vh; }
   .navigation__group {
     font-size: 0.79em; }
   .navigation__button {
@@ -272,8 +273,6 @@ body {
   .person__image {
     width: 155px;
     height: 155px; }
-  .header, .overlay {
-    height: 377px; }
   .person--left .person__image {
     top: -60px;
     left: -40px;}
@@ -282,6 +281,13 @@ body {
     right: -40px; } }
 
 @media (max-width: 991px) {
+  .header {
+    height: 56vh;
+    margin-bottom: 14rem;
+  }
+  .header h2 {
+    font-size: 2rem;
+  }
   .navigation__group {
     background-color: #FFBE08;
     width: 50%;
@@ -294,10 +300,7 @@ body {
     width: 12rem; }
   .center-me {
     text-align: left; }
-  .header, .overlay {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 322px; }
+
   .person--left .person__image {
     top: -60px;
     left: -40px; }
@@ -352,20 +355,18 @@ body {
   margin-top: 1.5em; }
 
 @media (max-width: 535px) {
+  .header {
+    height: 30vh;
+    margin-bottom: 12rem;
+  }
   .modal-title, {
     font-size: 2em; }
   .modal-button {
     padding: 0.5em 1em; }
-  .header, .overlay {
-    position: relative;
-    width: 100vw;
-    height: 170px;
-    background-size: cover; }
-.person__name, .person__text {
-    font-size: 0.75em; }
-.person--left .person__name {
-  margin-left: 25px;
-}
+  .person__name, .person__text {
+    font-size: 0.9em; }
+  .person--left .person__name {
+  margin-left: 25px; }
   .person__image {
     width: 130px;
     height: 130px; }
@@ -380,8 +381,10 @@ body {
     left: 1.3rem; }
   .person--right .person__text {
     padding: 4.9rem 1rem 1rem 2.8rem;
-    right: 1.3rem; } }
-   }
+    right: 1.3rem; }
+  .header h2 {
+    font-size: 1.5rem;
+  } }
 
 @media (max-width: 380px) {
   .modal-title {
@@ -393,13 +396,13 @@ body {
     top: calc(50% - 0.6em); }
   .modal-button {
     padding: 0.5em; }
-  .header, .overlay {
-    background-size: cover;
-    height: 120px;
+  .header {
+    margin-bottom: 10rem;
+    height: 20vh;
     }
   .header h2 {
-    font-size: 1.5rem;
-    }
+    font-size: 0.8rem;
+  }
   .person__text {
     font-size: 1rem; }
   .person {
