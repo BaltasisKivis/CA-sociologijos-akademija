@@ -375,14 +375,16 @@ body {
   }
 
   .aboutus__video--play {
-      position: sticky; 
-      top: 50px;
+      position: absolute;
+      margin-top: -0.4rem;
+      margin-right: 100rem;
       width: 0;
       height: 0;
       border: 0 solid transparent;
       border-bottom-width: 24px;
       border-top-width: 24px;
       border-left: 37px solid white;
+      background: transparent;
   }
 
   .interview {
