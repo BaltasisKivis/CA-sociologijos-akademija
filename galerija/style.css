@@ -346,7 +346,7 @@ main {
 
 @media (max-width: 1645px) {
   .modal--caption {
-    left: 3rem;
+    left: 2rem;
     top: 1rem; }
     .modal--caption span {
       margin: 0;
