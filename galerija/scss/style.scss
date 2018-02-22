@@ -12,6 +12,10 @@ body {
 }
 
 // NAVIGACIJA + REGISTRACIJA Modal
+.navbar {
+  z-index: 2;
+}
+
 .collapsing {
     z-index: 0; }
   
@@ -276,7 +280,6 @@ body {
 }
 
 
-
 main {
     padding-top: 4.5rem;
     
@@ -309,10 +312,30 @@ main {
             .gallery__item {
                 margin: 1rem;
             }
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              overflow: hidden;
+            }
     
             .gallery__item:hover {
                 transform: scale(1.1,1.1);
             }
+
+            .gallery__item--daugiau {
+                position: absolute;
+                color: white;
+                z-index: 1; 
+            }
+
+            .gallery__item--lastImg {
+                filter: blur(4px);
+                border: 1px solid black;
+                z-index: 0; 
+              }
         
             img {
                 width: 23rem;
@@ -369,11 +392,10 @@ main {
                 .gallery {
                     display: flex;
                     flex-direction: column;
-                    // width: 100%;
     
-                    // .gallery__item {
-                    //     width: auto;
-                    // }
+                    .gallery__item {
+                        width: auto;
+                    }
     
                     img {
                         width: 85vw;

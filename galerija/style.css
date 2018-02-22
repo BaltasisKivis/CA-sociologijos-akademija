@@ -8,6 +8,9 @@
 body {
   font-family: "Raleway", sans-serif; }
 
+.navbar {
+  z-index: 2; }
+
 .collapsing {
   z-index: 0; }
 
@@ -258,8 +261,7 @@ body {
           font-size: 1.8rem; }
 
 main {
-  padding-top: 4.5rem;
-  padding-bottom: 10rem; }
+  padding-top: 4.5rem; }
   main .sectionPhotos {
     margin-top: 4.5rem; }
   main section {
@@ -277,13 +279,13 @@ main {
       display: flex;
       flex-wrap: wrap; }
       main section .gallery .gallery__item {
-        margin: 1rem;
-        position: relative;
-        overflow: hidden; }
+        margin: 1rem; }
       main section .gallery a {
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        position: relative;
+        overflow: hidden; }
       main section .gallery .gallery__item:hover {
         -webkit-transform: scale(1.1, 1.1);
                 transform: scale(1.1, 1.1); }
@@ -291,13 +293,13 @@ main {
         position: absolute;
         color: white;
         z-index: 1; }
-      main section .gallery img {
-        width: 23rem; }
       main section .gallery .gallery__item--lastImg {
         -webkit-filter: blur(4px);
                 filter: blur(4px);
         border: 1px solid black;
         z-index: 0; }
+      main section .gallery img {
+        width: 23rem; }
 
 @media (max-width: 1799px) {
   main section .containerGallery {
@@ -321,6 +323,8 @@ main {
     main section .containerGallery .gallery {
       display: flex;
       flex-direction: column; }
+      main section .containerGallery .gallery .gallery__item {
+        width: auto; }
       main section .containerGallery .gallery img {
         width: 85vw; } }
 
