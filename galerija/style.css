@@ -238,7 +238,7 @@ main {
   main .sectionPhotos {
     margin-top: 4.5rem; }
   main .yearsSection {
-    background-image: url("gallery-jumbotron-background.jpg");
+    background-image: url("images/gallery-jumbotron-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -343,6 +343,16 @@ main {
       width: 46%; }
       main section .containerGallery .gallery__item img {
         width: 100%; } }
+
+@media (max-width: 1645px) {
+  .modal--caption {
+    left: 3rem;
+    top: 1rem; }
+    .modal--caption span {
+      margin: 0;
+      font-size: 1.2rem; }
+    .modal--caption span:last-child {
+      padding: 0; } }
 
 @media (max-width: 1000px) {
   :root {

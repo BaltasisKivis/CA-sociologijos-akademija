@@ -17,7 +17,7 @@ header {
     z-index: 2;
   }
   
-  .collapsing {
+ .collapsing {
       z-index: 0; }
     
     .navbar-toggler {
@@ -251,7 +251,7 @@ main {
     }
 
     .yearsSection {
-      background-image: url("gallery-jumbotron-background.jpg");
+      background-image: url("images/gallery-jumbotron-background.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -416,6 +416,21 @@ main {
     }
 
     
+}
+
+@media (max-width: 1645px) {
+  .modal--caption {
+    left: 3rem;
+    top: 1rem;
+
+    span {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    span:last-child {
+      padding: 0;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
