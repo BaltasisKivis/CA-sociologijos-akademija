@@ -1,0 +1,48 @@
+section {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid {
+  background-image: url('linijos-atsiliepimai.svg');
+  background-repeat: no-repeat;
+  /*background-color: red;*/
+}
+.section__atsiliepimai {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.container-fluid .h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.margins {
+  margin-top: 3rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+.carousel-inner {
+  min-height: 12rem;
+}
+.carousel-inner__image {
+  width: 2rem;
+  position: absolute;
+  left: 7rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('arrow.svg');
+}
+
+.carousel-control-next-icon {
+  background-image: url('arrow.svg');
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 610px) {
+  .margins {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
