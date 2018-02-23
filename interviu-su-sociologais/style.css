@@ -321,7 +321,7 @@ Content block
   margin: 3% auto; }
 
 .content__paragraph {
-  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   margin: 2rem auto;
   line-height: 180%; }
   @media (max-width: 991.98px) {
