@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../homepage/navigation/style.css">
+  <link rel="stylesheet" href="../homepage/footer/style.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navigation">
+    <div class="navigation__logo navigation__logo--small">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+      <div class="navbar-nav navigation__group">
+        <div class="nav-item dropdown">
+          <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">APIE MUS</a>
+            <a class="dropdown-item" href="#">KOMANDA</a>
+          </div>
+        </div>
+        <a href="" class="nav-item nav-link navigation__item">renginiai</a>
+        <a href="" class="nav-item nav-link navigation__item">galerija</a>
+        <div class="nav-item nav-link navigation__logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <a href="" class="nav-item nav-link navigation__item">studijos</a>
+        <a href="" class="nav-item nav-link navigation__item">blogas</a>
+        <a href="" class="nav-item nav-link navigation__item">atsiliepimai</a>
+        <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+      </div>
+    </div>
+    <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+  </nav>
+  <!-- REGISTRATION MODAL -->
+  <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+        <div class="modal-header">
+          <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+        </div>
+        <div class="modal-body">
+          <form class="modal-form">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Vardas:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Pavardė:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <input type="submit" value="SIŲSTI" class="modal-button">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JUMBOTRON -->
+  <section class="jumbotron jumbotron-fluid block__header">
+    <h1 class="display-4 block__header--title">BLOGAS</h1>
+    <img class="block__header--logo" src="./images/brush_logo.svg" alt="Sociologijos Akademijos logotipas">
+  </section>
+  <!-- ARTICLES -->
+  <main class="block">
+    <section class="row block__row">
+      <section class="col-4 block__quote block__quote--yellow">
+        <section class="block__quote--body body--yellow d-flex justify-content-center align-items-center">
+          <h3 class="block__quote--text">Grynasis santykis yra savanoriškas įsipareigojimas kitam žmogui, užmezgant su juo tarpusavio pasitikėjimo ryšį.</h3>
+        </section>
+        <footer class="block__quote--footer footer--yellow">
+          <img class="block__quote--image" src="./images/Decoration_blog_citata_desk.jpg" alt="">
+        </footer>
+      </section>
+      <section class="col-8 block__article">
+        <figure class="block__article--cover">
+          <img src="./images/YellowCar_blog_desk.jpg" alt="" class="block__article--image">
+        </figure>
+        <article class="block__article--content">
+          <h3 class="block__article--header">Apie tarpasmenius santykius sociologiškai</h3>
+          <time>2017 Balandžio 15</time>
+          <p class="block__article--text">Žmogus yra sociali būtybė; jis yra nuolatiniame santykyje su kitais žmonėmis. Net jeigu manome, kad esame “vienišiai” ir galime išgyventi be draugų ir kitų žmonių, vis tiek dalyvaujame visuomenėje, jeigu ir netiesiogiai: mums, pavyzdžiui, gali
+            būti svarbu, ką apsirengti. Jau tai, kad apskritai nešiojame rūbus, reiškia, jog esame netiesioginiame santykyje su juos gaminusiais žmonėmis – dizaineriais, medžiagų gamintojais...</p>
+          <p class="block__article--text-mobile">Žmogus yra sociali būtybė; jis yra nuolatiniame santykyje su kitais žmonėmis. Net jeigu manome, kad esame ...</p>
+          <a href="#" class="block__article--read-more">Skaityti daugiau</a>
+        </article>
+      </section>
+    </section>
+    <section class="row block__row">
+      <section class="col-4 block__article">
+        <figure class="block__article--cover">
+          <img src="./images/Bubble_blog_desk.jpg" alt="" class="block__article--image">
+        </figure>
+        <article class="block__article--content">
+          <h3 class="block__article--header">Vasara pro sociologinius akinius...</h3>
+          <time>2017 Kovo 17</time>
+          <p class="block__article--text">Kai vieni ėmė džiaugtis atostogomis, Sociologijos akademijos komanda, nepasiduodama saulėtų dienų vilionėms, patraukė dirbti į Žeimius – pirmąją Sociologijos akademijos Vasaros stovyklą.</p>
+          <p class="block__article--text-mobile">Kai vieni ėmė džiaugtis atostogomis, Sociologijos akademijos komanda, nepasiduodama saulėtų...</p>
+          <a href="#" class="block__article--read-more">Skaityti daugiau</a>
+        </article>
+      </section>
+      <section class="col-4 block__article">
+        <figure class="block__article--cover">
+          <img src="./images/HumanAndDog_blog_desk.jpg" alt="" class="block__article--image">
+        </figure>
+        <article class="block__article--content">
+          <h3 class="block__article--header">"Insaideriai" ir "autsaideriai", arba dominuojantys ir atstumtieji</h3>
+          <time>2017 Vasario 20</time>
+          <p class="block__article--text">Ar kada teko susimąstyti, kodėl kai kuriuos žmones mes priimame kaip sau lygius, o kitus tiesiog atstumiame, nors gerai jų net nepažįstame?</p>
+          <p class="block__article--text-mobile">Ar kada teko susimąstyti, kodėl kai kuriuos žmones mes priimame kaip sau lygius, o kitus tiesiog atstumiame... </p>
+          <a href="#" class="block__article--read-more">Skaityti daugiau</a>
+        </article>
+      </section>
+      <section class="col-4 block__article">
+        <figure class="block__article--cover">
+          <img src="./images/WhiteHuman_blog_desk.jpg" alt="" class="block__article--image">
+        </figure>
+        <article class="block__article--content">
+          <h3 class="block__article--header">Kas yra sociologija?</h3>
+          <time>2017 Sausio 12</time>
+          <p class="block__article--text">Norint suprasti, kas yra visuomenė, verta ją palyginti su kitokio pobūdžio žmonių visuma – bendruomene. Bendruomenę sudaro žymiai mažiau žmonių nei visuomenę.</p>
+          <p class="block__article--text-mobile">Norint suprasti, kas yra visuomenė, verta ją palyginti su kitokio pobūdžio žmonių visuma...</p>
+          <a href="#" class="block__article--read-more">Skaityti daugiau</a>
+        </article>
+      </section>
+    </section>
+    <section class="row block__row">
+      <section class="col-8 block__quote block__quote--grey">
+        <section class="block__quote--body body--grey d-flex justify-content-center align-items-center">
+          <h3 class="block__quote--text text-white">Grynasis santykis yra savanoriškas įsipareigojimas kitam žmogui, užmezgant su juo tarpusavio pasitikėjimo ryšį.</h3>
+        </section>
+        <footer class="block__quote--footer footer--grey">
+          <img class="block__quote--image" src="./images/Decoration2_blog_citata_desk.jpg" alt="">
+        </footer>
+      </section>
+      <section class="col-4 block__article">
+        <figure class="block__article--cover">
+          <img src="./images/Plant_blog_desk.jpg" alt="" class="block__article--image">
+        </figure>
+        <article class="block__article--content">
+          <h3 class="block__article--header">Žeimių bendruomeniškumo paieškos</h3>
+          <time>2017 Sausio 01</time>
+          <p class="block__article--text">Pristatome Sociologijos akademijos Vasaros moksleivių stovyklos metu atlikto tyrimo rezultatus. Jaunieji tyrėjai turėjo progą prisiliesti prie labai aktualios sociologinės problemos...</p>
+          <p class="block__article--text-mobile">Pristatome Sociologijos akademijos Vasaros moksleivių stovyklos metu atlikto tyrimo rezultatus...</p>
+          <a href="#" class="block__article--read-more">Skaityti daugiau</a>
+        </article>
+      </section>
+    </section>
+    <section class="row block__row justify-content-center">
+      <button class="block__button" type="button ">RODYTI DAUGIAU</button>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="container-fluid">
+    <p class="h2 text-center">KONTAKTAI</p>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="point"></div>
+          <div class="wid">
+            <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br> Universiteto g. 9/1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="mail"></div>
+          <div class="wid">
+            <p class="margin-bottom">www.fsf.vu.lt</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="face"></div>
+          <div class="wid">
+            <p class="margin-bottom">FB: Sociologijos akademija</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="mail"></div>
+          <div class="wid">
+            <p class="margin-bottom">tel.: +370 000 00000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+</body>
+
+</html>
