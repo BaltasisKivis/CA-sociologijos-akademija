@@ -1,0 +1,231 @@
+body {
+margin: 0;
+font-family: 'Raleway', sans-serif;
+--yellow: #FFBE08;
+--black: #333338;
+--grey: #4E4D5C;
+}
+
+.navigation {
+  z-index: 1030;
+}
+.block__header{
+  background-image: url('../images/Blog_titulineNuotrauka_desk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -2;
+}
+.block__header--title{
+  font-size: 6.5rem;
+  color: white;
+  font-weight: 800;
+  margin-top: 3.5rem;
+}
+.block__header--logo {
+  width: 20%;
+  margin-top: 4rem
+}
+
+.block__header::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.block {
+  margin: 8rem;
+}
+.block__row{
+  margin-bottom: 10rem;
+}
+.block__quote{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.block__quote--body{
+  flex: auto;
+}
+.block__quote--text {
+  font-weight: lighter;
+  margin: 0 3rem;
+}
+.block__quote--image {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: -60%;
+  left: calc(50% - 3.5rem);
+  object-fit: cover;
+}
+.block__quote--footer{
+  position: relative;
+  height: 6rem;
+}
+.body--yellow{
+  background-color: var(--yellow);
+}
+.footer--yellow{
+  border: solid 1px var(--yellow);
+  border-top: none;
+}
+.body--grey{
+  background-color: var(--grey);
+}
+.footer--grey{
+  border: solid 1px var(--grey);
+  border-top: none;
+}
+.block__quote--yellow::before{
+  content: url('../images/kabutes_black.svg');
+  width: 2rem;
+  position: absolute;
+  top: 14%;
+  left: 12%;
+}
+.block__quote--grey::before{
+  content: url('../images/kabutes.svg');
+  width: 2rem;
+  position: absolute;
+  top: 14%;
+  left: 7%;
+}
+.block__article{
+  font-weight: lighter;
+}
+.block__article--image{
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  object-position: 50% 80%;
+}
+.block__article--header{
+  font-weight: lighter;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: 2px solid black;
+  min-height: 7rem;
+  display: flex;
+  align-items: center;
+}
+.block__article--text{
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+.block__article--read-more{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--black);
+  position: absolute;
+  right: 1.9rem;
+  bottom: -3rem;
+}
+.block__article--read-more::after{
+  content: url('../images/arrows.svg');
+  width: 100%;
+  position: absolute;
+  left: 4.6rem;
+  top: 0.25rem;
+}
+.block__button{
+  width: 12rem;
+  height: 2.8rem;
+  background-color: var(--black);
+  color: white;
+  font-weight: lighter;
+  border-radius: 20px;
+  border: none;
+}
+@media (max-width: 1512px){
+  .block__article--header{
+    min-height: 9rem;
+  }
+}
+@media (max-width: 1319px){
+  .block__article--header{
+    min-height: 11rem;
+  }
+}
+@media (max-width: 1000px){
+  .block__article--header{
+    min-height: 13rem;
+  }
+}
+@media (min-width: 992px){
+  .block__article--text-mobile{
+    display: none;
+  }
+}
+@media(max-width: 991px){
+  body{
+    background-image: url('../images/Blog_titulineNuotrauka_desk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 10%;
+  }
+.block__header{
+  display: none;
+}
+.block__header--title{
+  display: none;
+}
+.block__header--logo{
+  display: none;
+}
+.block__quote{
+  display: none;
+}
+.block__article--read-more{
+  display: none;
+}
+.container-fluid{
+  display: none;
+}
+.block__article--text {
+  display: none;
+}
+.block{
+  margin: 5vw;
+  margin-top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block__row{
+  margin: 0;
+}
+.block__article{
+  color: white;
+  display: flex;
+  min-width: 100%;
+  margin: 1rem 0;
+}
+.block__article:nth-of-type(odd){
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.block__article--cover{
+  flex: 1;
+  margin:0;
+}
+.block__article--content{
+  background-color: rgba(0, 0, 0, 0.3);
+  flex: 1;
+  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (992 - 300)));
+
+}
+.block__article--header{
+  font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (992 - 300)));
+  border-bottom: 2px solid white;
+  min-height: 1rem;
+}
+}
