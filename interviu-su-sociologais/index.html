@@ -1,166 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Sociologija - mokslas, reikalingas šiuolaikinei visuomenei</title>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/js/photoswipe/photoswipe.css"> 
+    <link rel="stylesheet" href="assets/js/photoswipe/photoswipe.css">
     <link rel="stylesheet" href="assets/js/photoswipe/default-skin/default-skin.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/photoswipe/photoswipe.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/photoswipe/photoswipe.min.js"></script>
     <script src="assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
-   
+
 </head>
-<body>	
-<!-- NAVIGATION -->
-	<nav class="navbar navbar-expand-lg navigation">
-		<div class="navigation__logo navigation__logo--small">
-			<img src="images/logo.svg" alt="">
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
-			<div class="navbar-nav navigation__group">
-				<div class="nav-item dropdown">
-					<a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#">APIE MUS</a>
-						<a class="dropdown-item" href="#">KOMANDA</a>
-					</div>
-				</div>
-					<a href="" class="nav-item nav-link navigation__item">renginiai</a>
-					<a href="" class="nav-item nav-link navigation__item">galerija</a>
-					<div class="nav-item nav-link navigation__logo">
-						<img src="images/logo.svg" alt="">
-					</div>
-					<a href="" class="nav-item nav-link navigation__item">studijos</a>
-					<a href="" class="nav-item nav-link navigation__item">blogas</a>
-					<a href="" class="nav-item nav-link navigation__item">atsiliepimai</a>
-					<a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
-			</div>
-		</div>
-		<button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navigation">
+        <div class="navigation__logo navigation__logo--small">
+            <img src="images/logo.svg" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+            <div class="navbar-nav navigation__group">
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">apie</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">APIE MUS</a>
+                        <a class="dropdown-item" href="#">KOMANDA</a>
+                    </div>
+                </div>
+                <a href="" class="nav-item nav-link navigation__item">renginiai</a>
+                <a href="" class="nav-item nav-link navigation__item">galerija</a>
+                <div class="nav-item nav-link navigation__logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <a href="" class="nav-item nav-link navigation__item">studijos</a>
+                <a href="" class="nav-item nav-link navigation__item">blogas</a>
+                <a href="" class="nav-item nav-link navigation__item">atsiliepimai</a>
+                <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+            </div>
+        </div>
+        <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
     </nav>
-<!-- REGISTRATION MODAL  -->
+    <!-- REGISTRATION MODAL  -->
     <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-            <div class="modal-header">
-              <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-form">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Vardas:</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Pavardė:</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <input type="submit" value="SIŲSTI" class="modal-button">
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <form class="modal-form">
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Vardas:</label>
-                  <input type="text" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Pavardė:</label>
-                  <input type="text" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">El. Paštas:</label>
-                  <input type="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
-                  <input type="text" class="form-control" required>
-                </div>
-                  <input type="submit" value="SIŲSTI" class="modal-button">
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
-<!-- MAIN CONTENT -->
-    <main>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main class="maincontent">
         <article>
-            <header class="aheader">
-                <div class="aheader_overlay"></div>
-                <nav class="breadcrumb--custom">
-                    <p class="breadcrumb__responsive--full">
-                        <a href="/" rel="index up up">Pagrindinis</a><span>»</span>
-                        <a href="/" rel="rel up">Apie mus</a><span>»</span>
-                        <a class="bold">Sociologija - mokslas, reikalingas šiuolaikinei visuomenei </a>
+            <header class="content__header">
+                <div class="content__header--overlay"></div>
+                <nav class="content__breadcrumb">
+                    <p class="breadcrumb__full d-none d-md-block">
+                        <a class="breadcrumb_list" href="/../homepage/index.htm" rel="rel up">Apie mus</a>
+                        <a class="breadcrumb_list" href="/" rel="index up up">Pagrindinis</a>
+                        <span class="breadcrumb_list">»</span>
+                        <a class="breadcrumb_list" href="/../apie-mus/index.htm" rel="rel up">Apie mus</a>
+                        <span class="breadcrumb_list">»</span>
+                        <a class="breadcrumb_list font-weight-bold">Sociologija - mokslas, reikalingas šiuolaikinei visuomenei </a>
                     </p>
-                    <p class="breadcrumb__responsive--back">
-                        <span>»</span><a href="/" rel="index up">Apie mus</a>
+                    <p class="breadcrumb__mobile d-md-none">
+                        <span class="breadcrumb_list">«</span>
+                        <a class="breadcrumb_list" href="../apie-mus/index.html" rel="index up">Apie mus</a>
                     </p>
                 </nav>
-                <div class="container"><h1 class"title__articile">Sociologija — mokslas, reikalingas šiuolaikinei visuomenei</h1>
+                <div class="content content__title">
+                    <h1 class="content__title">Sociologija — mokslas, reikalingas šiuolaikinei visuomenei</h1>
                 </div>
             </header>
-            <div class="container content--main">
-                <p>Šiuo metu dauguma abiturientų renkasi savo studijų kryptį. Tai ne tik atsakingas, bet ir nerimą bei ilgus apmąstymus keliantis sprendimas. Juk dažnai manoma, kad jis nulemia ateities karjerą, tačiau padaryti tokį svarbų žingsnį kai tau tik 18 ar 19 metų yra pakankamai sudėtinga. Dažnai pasiduodame tėvų, aplinkinių, mokytojų raginimams rinktis tam tikras studijas, net nepagalvodami ar to norime patys. Neretai pasukame lengviausiu keliu ir renkamės iš tuo metu mums siūlomų populiariausių studijų programų.</p>
-                <p>Mes, sociologijos absolventai, prieš ketverius metus dar būdami mokyklos abiturientais pasirinkome ne tokį populiarų kelią – sociologijos studijas. „Drąsu“ – daug kas mums sakė. O mes, nors ir su maža dvejone, tačiau rinkomės tai, kas galbūt kitiems atrodė neaišku ir neįprasta, bet mums patiems kėlė didelį susidomėjimą. Iki šiol sociologija nebuvo ta studijų kryptis, į kurią studentai įnirtingai veržiasi. Kyla klausimas - kodėl? Deja, nemaža dalis visuomenės apie sociologiją žino mažai arba ją maišo su kitais socialiniais mokslais. Tačiau šio straipsnio tikslas nėra sukelti stojančiųjų antplūdį ar sociologijos mokslo studijas paversti masinėmis. Jo tikslas − sudominti tuos, kurie ieško įdomių ir nestandartinių, kritinį mąstymą skatinančių bei atveriančių kelią į įvairias karjeros sritis, studijų. Šiame straipsnyje mes pristatysime sociologiją kaip mokslą, studijų kryptį ir šios specialybės karjeros galimybes.</p>
-                <section>
-                    <h2>Kas yra sociologija?</h2>
-                    <p>Visų pirma, į klausimą „kas yra sociologija“ trumpai atsakyti būtų sudėtinga, nes tai platų dalykų lauką apimantis mokslas, tačiau, paprastai sakant, sociologija tiria žmonių socialinį elgesį ir visuomenę. Sociologo akys nukreiptos į kasdienę žmogaus veiklą, pradedant įsimylėjėlių elgesiu gatvėje, baigiant masiniais judėjimais už ekologiją ar atominės energijos plėtrą. Sociologinės žinios gali padėti atsakyti į klausimus: kodėl mokyklų architektūra primena kareivines? Kaip pasikeitė žmonių santykiai, atsiradus Facebook‘ui ir kitiems socialiniams tinklams internete? Kaip ir kodėl keletas mobiliųjų teksto žinučių gali tapti eilėmis prie bankomatų visoje šalyje? Ieškant atsakymų, stengiamasi suprasti, kas slypi už atrodytų savaime suprantamų dalykų, kokios socialinės jėgos daro įtaką žmonių elgesiui, kaip kuriamos taisyklės ir visuomenės normos su kuriomis susiduriame nuolatos, dažnai to nė nejausdami. </p>
-                    <p>Skeptiškiau nusiteikęs skaitytojas gali suabejoti – kuo gi sociologas skiriasi nuo atidaus televizijos bei spaudos naujienų sekėjo ar daugiabučio lange nuolat matomo veido, kuris taip pat įdėmiai stebi visuomenėje vykstančius procesus? Sociologijos žinios ugdo kritinį požiūrį į savo paties įsitikinimus bei socialinę tikrovę. Gimstame pasaulyje, kuriame jau egzistuoja įvairios taisyklės. Jų išmokstame auklėjami tėvų, dalyvaudami švietimo procese, bendraudami su draugais, artimaisiais ir nepažįstamais žmonėmis. Kiekvieno mūsų supratimą apie visuomenę formuoja gausybė autoritetų bei ribota asmeninė patirtis. Todėl sociologo uždavinys yra pamėginti ištrūkti iš šio užburto rato, kaskart suabejojant „visiems žinomais faktais“ apie žmonių santykius bei problemas, stengtis įžvelgti, kas slypi už jų. Žmogui, nusprendusiam įveikti tokį uždavinį, neabejotinai reikia drąsos – gautos žinios neretai prieštarauja paties tyrėjo realybės ir normų suvokimui, meta iššūkį jo įsitikinimams.</p>
-                    <p>Ieškoti atsakymų į klausimus apie žmonių socialinį elgesį bei visuomenės struktūrą padeda įvairiausi sociologiniai tyrimai bei kitų mokslų – psichologijos, politikos, ekonomikos ir kt. – įžvalgos. Ko gero, ne vienam skaitytojui sociologiniai tyrimai pirmiausia siejasi su žurnalo storio anketomis, tačiau sociologinių tyrimų objektu gali tapti kur kas platesnis ratas šaltinių – nuo graffiti ant miesto sienų iki keleivių stebėjimo viešajame transporte. Remiantis teorinėmis įžvalgomis bei kitų autorių tyrimais, siekiama įsigilinti į tiriamų žmonių pasaulėžiūrą ar įvairių visuomenės reiškinių turinį. Kodėl verta studijuoti sociologiją? Sociologiją studijuoti neabejotinai verta. Pabandysime paaiškinti kodėl. Pirmiausia, šis mokslas atveria platesnes mąstymo galimybes, nes į įvairias politines, ekonomines ir net kasdienines tarpusavio sąveikas skatinama žvelgti daug kritiškiau. Sociologai įžvelgia tai, ko nemato kiti. Nejučiomis, jau studijų pradžioje, iš įvairių šaltinių (pvz.: spaudos, tam tikrų viešų pareiškimų ar net artimų asmenų) gaunamą informaciją studentai pradeda analizuoti ieškodami paslėptų prasmių, „tikrųjų“ informacijos skleidėjų tikslų, o tai skatina tobulėti ne tik darbinėje, bet ir asmeninėje erdvėje. Mąstyti kritiškai mūsų nemoko mokykloje, tačiau sociologijos studijos gali būti kelias tokio mąstymo link.</p>
-                    <p>Šiose studijose derinami tiek humanitariniai (filosofija, socialinė teorija), tiek tikslieji (matematika, statistika) mokslai, tad dominančią nišą ras daugelis. Sociologiniai tyrimai apima kokybinius ir kiekybinius tyrimus. Atlikdami kokybinius tyrimus, tyrėjai, užuot dirbę su skaičiais, kalbina žmones, interpretuoja tekstus, nuotraukas, filmuotą medžiagą ir kitus žmonių veiklos pėdsakus. Nors iš pirmo žvilgsnio atrodo, kad tai gali daryti bet kas, toks sociologinis darbas primena detektyvą. Kokybinių tyrimų metu tyrėjai ima interviu, bendrauja su žmonėmis, su kuriais visiškai nesusiduria įprastame gyvenime (pradedant elgetomis ir baigiant seimo nariais), atvirai arba slapta stebi jų elgesį, kruopščiai ir kantriai nagrinėja kiekvieną detalę, kuri gali būti be galo prasminga ir atvesti prie naujų atradimų.</p>
-                    <p>Kiek plačiau žinomi yra kiekybiniai sociologinių tyrimų metodai. Tokių tyrimų metu statistiškai analizuojami skaitiniai duomenys. Statistinė analizė – tai ne tik aprašymas, kiek procentų dalyvių pasirinko tam tikrus atsakymus į apklausos klausimus. Ji leidžia pamatyti, kurie iš daugybės duomenų tarpusavyje susiję ir kokią įtaką jie daro vieni kitiems, nagrinėti kaip kinta visuomenėje vyraujantys įsitikinimai ir kas tai lemia, formuluoti išvadas apie dideles žmonių grupes – viso miesto, valstybės ar net pasaulio gyventojus. Kiekybiškai gali būti tiriami ir tekstai – skaičiuojama, kaip vartojami ir kokie yra pagrindiniai žodžiai ir jų sinonimai, kaip susiejamos jų prasmės žurnalistų straipsniuose, įstatymuose ar literatūros kūriniuose ir kokį vaizdinį apie problemą ar reiškinį tokios sąsajos sukuria. Taip pat, pavyzdžiui, galima nagrinėti socialinius tinklus – kaip tarpusavyje susiję Facebook‘o, didžiulės įmonės darbuotojai ar rajono gyventojai, kaip jų tarpe sklinda žinios, pažiūros bei elgesio bruožai. </p>
-                    <p>Bakalauro studijų pradžioje analizuojamos klasikinės, šiuolaikinės ir postmodernios teorijos. Atveriant šio socialinio mokslo krypčių galimybes studijuojami tokie dalykai kaip: miesto, švietimo, politikos, ekonomikos, religijų, etninių santykių, darbo, šeimos, lyties, tapatumo ir kt. sociologijos. Taigi, dar vienas privalumas yra tas, jog sociologija tiria įvairias šiuolaikinio gyvenimo sritis, todėl studijuojant kiekvienas atras sau artimą. Pavyzdžiais galėtų būti šių metų absolventų atlikti tyrimai apie priešrinkiminę politinę komunikaciją „Facebook‘o“ socialiniame tinkle (politikos sociologija), muzikos kūrėjo vaidmenį masinio vartojimo visuomenėje (muzikos sociologija), socialines sąveikas viešajame transporte (miesto sociologija), paauglio tapatumą migracijos paliestose šeimose (šeimos ir tapatumo sociologija). </p>
-                    <p>Studijų pabaigoje suteikiama galimybė teorines žinias pritaikyti praktiškai – vėlesniuose kursuose atliekama praktika valstybinėje, verslo įmonėje ar nevyriausybinėje organizacijoje, pavyzdžiui, savivaldybėje, rinkos tyrimų, žiniasklaidos planavimo agentūrose ir kt. Be to, praktiką galima atlikti tarptautinėse, įvairiose šalyse įsikūrusiose organizacijose, pavyzdžiui, Europos Parlamente, Junginių Tautų organizacijoje, tarptautinių tyrimų institute, migracijos tarnyboje, statistikos departamente ir t.t. Taip pat yra galimybė studijuoti pasirinktoje Europos šalyje pagal Erasmus mainų programą. O tai tampa neįkainojama patirtimi ateityje.</p>
-                </section>
-                <section>
-                    <h2>Kur dirba sociologai?</h2>
-                    <p>Svarbus sociologinio išsilavinimo privalumas yra tas, jog šių studijų krypties pasirinkimas neapriboja profesinės karjeros krypčių pasirinkimo. Jis padeda tapti profesionaliu specialistu įvairiose srityse. Tai ypač svarbu nuolat kintančioje darbo rinkoje, kai neretai tenka persikvalifikuoti. Studijų metu sukauptos žinos apie kiekybinius ir kokybinius tyrimų metodus atveria galimybes įsidarbinti tyrimus atliekančiose įmonėse, pavyzdžiui: tyrimų institutuose, visuomenės nuomonės ir rinkos tyrimų, reklamos ir žiniasklaidos planavimo agentūrose. Be to, studijų metu išlavintas analitinis mąstymas padeda specializuotis nestandartinių įžvalgų bei kritinio mąstymo reikalaujančiose srityse. Sociologijos absolventai dirba derybininkais, projektų vadovais, marketingo specialistais, reklamos kūrėjais, žurnalistais – analitikais, svarbiais specialistais nevyriausybinėse organizacijose arba valstybės institucijose. Be to, visuomet galima pasirinkti ir mokslininko karjerą – toliau tęsti studijas universitete, įsitraukti į mokslinius tyrimus bei projektus, tapti dėstytoju (-a). </p>
-                    <p>Taigi sociologijos mokslas atveria plačias galimybes tiek karjeros, tiek asmeninio tobulėjimo srityse. Šiose studijose save atrasti gali tiek tiksliųjų mokslų mylėtojas (-a), tiek labiau į kūrybą linkęs ir menišką pajautimą turintis asmuo. Jas galima suderinti tarpusavyje arba tiesiog natūraliai nukrypstama į kažkurią iš šių sričių. Be to, studijuojant nejučiomis pradedi suvokti, jog sociologinis mąstymas, vertinant visuomenėje vykstančius reiškinius, pamažu tampa neatsiejama tavo gyvenimo dalimi, o kritinis žvilgsnis padeda į kasdienines tarpusavio sąveikas pažvelgti giliau, suvokti, kaip iš tiesų viskas yra sukonstruota (o ne tik tai, kaip pateikiama). 4 studijų metai mums buvo vienas įdomiausių ir daug žinių davęs gyvenimo etapas. Būdami abiturientais nestigome drąsos pasirinkti mus dominančią, o ne vieną iš populiariausių, studijų kryptį ir dabar galime dar drąsiau teigti, jog nesigailime. Taigi, pats laikas nebetikėti nugirstais stereotipiniais atsiliepimais, apie sociologiją ir iš arčiau susipažinti su šiuo, šiuolaikinei mūsų visuomenei ypač reikalingu, mokslu ir įdomia, kritinį žvilgsnį ugdančia, studijų kryptimi.</p>
-                </section>
-                <footer>
-                    <p>Tekstas perspausdintas iš delfi.lt</p>
-                </footer>
-                <section>
-                    
-                    <div  class="my-gallery galerija__socialogija" itemscope itemtype="http://schema.org/ImageGallery">
-                              <figure class="gsoc_main" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                              <a  href="assets/Images/Sociologija_post_suGalerija_desk.jpg" itemprop="contentUrl" data-size="1024x1024">
-                                  <img src="assets/Images/Sociologija_post_suGalerija_desk.jpg" itemprop="thumbnail" alt="Image description" />
-                              </a>                                                                
-                            </figure>
-                            <figure class="gsoc_item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a  href="assets/Images/Sociologija1_post_suGalerija_desk.jpg" itemprop="contentUrl" data-size="1024x1024">
-                                    <img src="assets/Images/Sociologija1_post_suGalerija_desk.jpg" itemprop="thumbnail" alt="Image description" />
-                                </a>                                                
-                              </figure>                
-                              <figure class="gsoc_item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a  href="assets/Images/Sociologija2_post_suGalerija_desk.jpg" itemprop="contentUrl" data-size="1024x1024">
-                                    <img src="assets/Images/Sociologija2_post_suGalerija_desk.jpg" itemprop="thumbnail" alt="Image description" />
-                                </a>                                                                
-                              </figure>
+            <section class="content">
+                <p class="content__paragraph">Šiuo metu dauguma abiturientų renkasi savo studijų kryptį. Tai ne tik atsakingas, bet ir nerimą bei ilgus
+                    apmąstymus keliantis sprendimas. Juk dažnai manoma, kad jis nulemia ateities karjerą, tačiau padaryti
+                    tokį svarbų žingsnį kai tau tik 18 ar 19 metų yra pakankamai sudėtinga. Dažnai pasiduodame tėvų, aplinkinių,
+                    mokytojų raginimams rinktis tam tikras studijas, net nepagalvodami ar to norime patys. Neretai pasukame
+                    lengviausiu keliu ir renkamės iš tuo metu mums siūlomų populiariausių studijų programų.</p>
+                <p class="content__paragraph">Mes, sociologijos absolventai, prieš ketverius metus dar būdami mokyklos abiturientais pasirinkome ne tokį
+                    populiarų kelią – sociologijos studijas. „Drąsu“ – daug kas mums sakė. O mes, nors ir su maža dvejone,
+                    tačiau rinkomės tai, kas galbūt kitiems atrodė neaišku ir neįprasta, bet mums patiems kėlė didelį susidomėjimą.
+                    Iki šiol sociologija nebuvo ta studijų kryptis, į kurią studentai įnirtingai veržiasi. Kyla klausimas
+                    - kodėl? Deja, nemaža dalis visuomenės apie sociologiją žino mažai arba ją maišo su kitais socialiniais
+                    mokslais. Tačiau šio straipsnio tikslas nėra sukelti stojančiųjų antplūdį ar sociologijos mokslo studijas
+                    paversti masinėmis. Jo tikslas − sudominti tuos, kurie ieško įdomių ir nestandartinių, kritinį mąstymą
+                    skatinančių bei atveriančių kelią į įvairias karjeros sritis, studijų. Šiame straipsnyje mes pristatysime
+                    sociologiją kaip mokslą, studijų kryptį ir šios specialybės karjeros galimybes.</p>
 
-                        
-                          </div>
+                <section class="content__subsection">
+                    <h2 class="content_subtitle">Kas yra sociologija?</h2>
+                    <p class="content__paragraph">Visų pirma, į klausimą „kas yra sociologija“ trumpai atsakyti būtų sudėtinga, nes tai platų dalykų lauką
+                        apimantis mokslas, tačiau, paprastai sakant, sociologija tiria žmonių socialinį elgesį ir visuomenę.
+                        Sociologo akys nukreiptos į kasdienę žmogaus veiklą, pradedant įsimylėjėlių elgesiu gatvėje, baigiant
+                        masiniais judėjimais už ekologiją ar atominės energijos plėtrą. Sociologinės žinios gali padėti atsakyti
+                        į klausimus: kodėl mokyklų architektūra primena kareivines? Kaip pasikeitė žmonių santykiai, atsiradus
+                        Facebook‘ui ir kitiems socialiniams tinklams internete? Kaip ir kodėl keletas mobiliųjų teksto žinučių
+                        gali tapti eilėmis prie bankomatų visoje šalyje? Ieškant atsakymų, stengiamasi suprasti, kas slypi
+                        už atrodytų savaime suprantamų dalykų, kokios socialinės jėgos daro įtaką žmonių elgesiui, kaip kuriamos
+                        taisyklės ir visuomenės normos su kuriomis susiduriame nuolatos, dažnai to nė nejausdami. </p>
+                    <p class="content__paragraph">Skeptiškiau nusiteikęs skaitytojas gali suabejoti – kuo gi sociologas skiriasi nuo atidaus televizijos
+                        bei spaudos naujienų sekėjo ar daugiabučio lange nuolat matomo veido, kuris taip pat įdėmiai stebi
+                        visuomenėje vykstančius procesus? Sociologijos žinios ugdo kritinį požiūrį į savo paties įsitikinimus
+                        bei socialinę tikrovę. Gimstame pasaulyje, kuriame jau egzistuoja įvairios taisyklės. Jų išmokstame
+                        auklėjami tėvų, dalyvaudami švietimo procese, bendraudami su draugais, artimaisiais ir nepažįstamais
+                        žmonėmis. Kiekvieno mūsų supratimą apie visuomenę formuoja gausybė autoritetų bei ribota asmeninė
+                        patirtis. Todėl sociologo uždavinys yra pamėginti ištrūkti iš šio užburto rato, kaskart suabejojant
+                        „visiems žinomais faktais“ apie žmonių santykius bei problemas, stengtis įžvelgti, kas slypi už jų.
+                        Žmogui, nusprendusiam įveikti tokį uždavinį, neabejotinai reikia drąsos – gautos žinios neretai prieštarauja
+                        paties tyrėjo realybės ir normų suvokimui, meta iššūkį jo įsitikinimams.</p>
+                    <p class="content__paragraph">Ieškoti atsakymų į klausimus apie žmonių socialinį elgesį bei visuomenės struktūrą padeda įvairiausi
+                        sociologiniai tyrimai bei kitų mokslų – psichologijos, politikos, ekonomikos ir kt. – įžvalgos. Ko
+                        gero, ne vienam skaitytojui sociologiniai tyrimai pirmiausia siejasi su žurnalo storio anketomis,
+                        tačiau sociologinių tyrimų objektu gali tapti kur kas platesnis ratas šaltinių – nuo graffiti ant
+                        miesto sienų iki keleivių stebėjimo viešajame transporte. Remiantis teorinėmis įžvalgomis bei kitų
+                        autorių tyrimais, siekiama įsigilinti į tiriamų žmonių pasaulėžiūrą ar įvairių visuomenės reiškinių
+                        turinį. Kodėl verta studijuoti sociologiją? Sociologiją studijuoti neabejotinai verta. Pabandysime
+                        paaiškinti kodėl. Pirmiausia, šis mokslas atveria platesnes mąstymo galimybes, nes į įvairias politines,
+                        ekonomines ir net kasdienines tarpusavio sąveikas skatinama žvelgti daug kritiškiau. Sociologai įžvelgia
+                        tai, ko nemato kiti. Nejučiomis, jau studijų pradžioje, iš įvairių šaltinių (pvz.: spaudos, tam tikrų
+                        viešų pareiškimų ar net artimų asmenų) gaunamą informaciją studentai pradeda analizuoti ieškodami
+                        paslėptų prasmių, „tikrųjų“ informacijos skleidėjų tikslų, o tai skatina tobulėti ne tik darbinėje,
+                        bet ir asmeninėje erdvėje. Mąstyti kritiškai mūsų nemoko mokykloje, tačiau sociologijos studijos
+                        gali būti kelias tokio mąstymo link.</p>
+                    <p class="content__paragraph">Šiose studijose derinami tiek humanitariniai (filosofija, socialinė teorija), tiek tikslieji (matematika,
+                        statistika) mokslai, tad dominančią nišą ras daugelis. Sociologiniai tyrimai apima kokybinius ir
+                        kiekybinius tyrimus. Atlikdami kokybinius tyrimus, tyrėjai, užuot dirbę su skaičiais, kalbina žmones,
+                        interpretuoja tekstus, nuotraukas, filmuotą medžiagą ir kitus žmonių veiklos pėdsakus. Nors iš pirmo
+                        žvilgsnio atrodo, kad tai gali daryti bet kas, toks sociologinis darbas primena detektyvą. Kokybinių
+                        tyrimų metu tyrėjai ima interviu, bendrauja su žmonėmis, su kuriais visiškai nesusiduria įprastame
+                        gyvenime (pradedant elgetomis ir baigiant seimo nariais), atvirai arba slapta stebi jų elgesį, kruopščiai
+                        ir kantriai nagrinėja kiekvieną detalę, kuri gali būti be galo prasminga ir atvesti prie naujų atradimų.</p>
+                    <p class="content__paragraph">Kiek plačiau žinomi yra kiekybiniai sociologinių tyrimų metodai. Tokių tyrimų metu statistiškai analizuojami
+                        skaitiniai duomenys. Statistinė analizė – tai ne tik aprašymas, kiek procentų dalyvių pasirinko tam
+                        tikrus atsakymus į apklausos klausimus. Ji leidžia pamatyti, kurie iš daugybės duomenų tarpusavyje
+                        susiję ir kokią įtaką jie daro vieni kitiems, nagrinėti kaip kinta visuomenėje vyraujantys įsitikinimai
+                        ir kas tai lemia, formuluoti išvadas apie dideles žmonių grupes – viso miesto, valstybės ar net pasaulio
+                        gyventojus. Kiekybiškai gali būti tiriami ir tekstai – skaičiuojama, kaip vartojami ir kokie yra
+                        pagrindiniai žodžiai ir jų sinonimai, kaip susiejamos jų prasmės žurnalistų straipsniuose, įstatymuose
+                        ar literatūros kūriniuose ir kokį vaizdinį apie problemą ar reiškinį tokios sąsajos sukuria. Taip
+                        pat, pavyzdžiui, galima nagrinėti socialinius tinklus – kaip tarpusavyje susiję Facebook‘o, didžiulės
+                        įmonės darbuotojai ar rajono gyventojai, kaip jų tarpe sklinda žinios, pažiūros bei elgesio bruožai.
+                    </p>
+                    <p class="content__paragraph">Bakalauro studijų pradžioje analizuojamos klasikinės, šiuolaikinės ir postmodernios teorijos. Atveriant
+                        šio socialinio mokslo krypčių galimybes studijuojami tokie dalykai kaip: miesto, švietimo, politikos,
+                        ekonomikos, religijų, etninių santykių, darbo, šeimos, lyties, tapatumo ir kt. sociologijos. Taigi,
+                        dar vienas privalumas yra tas, jog sociologija tiria įvairias šiuolaikinio gyvenimo sritis, todėl
+                        studijuojant kiekvienas atras sau artimą. Pavyzdžiais galėtų būti šių metų absolventų atlikti tyrimai
+                        apie priešrinkiminę politinę komunikaciją „Facebook‘o“ socialiniame tinkle (politikos sociologija),
+                        muzikos kūrėjo vaidmenį masinio vartojimo visuomenėje (muzikos sociologija), socialines sąveikas
+                        viešajame transporte (miesto sociologija), paauglio tapatumą migracijos paliestose šeimose (šeimos
+                        ir tapatumo sociologija). </p>
+                    <p class="content__paragraph">Studijų pabaigoje suteikiama galimybė teorines žinias pritaikyti praktiškai – vėlesniuose kursuose atliekama
+                        praktika valstybinėje, verslo įmonėje ar nevyriausybinėje organizacijoje, pavyzdžiui, savivaldybėje,
+                        rinkos tyrimų, žiniasklaidos planavimo agentūrose ir kt. Be to, praktiką galima atlikti tarptautinėse,
+                        įvairiose šalyse įsikūrusiose organizacijose, pavyzdžiui, Europos Parlamente, Junginių Tautų organizacijoje,
+                        tarptautinių tyrimų institute, migracijos tarnyboje, statistikos departamente ir t.t. Taip pat yra
+                        galimybė studijuoti pasirinktoje Europos šalyje pagal Erasmus mainų programą. O tai tampa neįkainojama
+                        patirtimi ateityje.</p>
                 </section>
-            </div>
+                <section class="content__subsection">
+                    <h2 class="content_subtitle">Kur dirba sociologai?</h2>
+                    <p class="content__paragraph">Svarbus sociologinio išsilavinimo privalumas yra tas, jog šių studijų krypties pasirinkimas neapriboja
+                        profesinės karjeros krypčių pasirinkimo. Jis padeda tapti profesionaliu specialistu įvairiose srityse.
+                        Tai ypač svarbu nuolat kintančioje darbo rinkoje, kai neretai tenka persikvalifikuoti. Studijų metu
+                        sukauptos žinos apie kiekybinius ir kokybinius tyrimų metodus atveria galimybes įsidarbinti tyrimus
+                        atliekančiose įmonėse, pavyzdžiui: tyrimų institutuose, visuomenės nuomonės ir rinkos tyrimų, reklamos
+                        ir žiniasklaidos planavimo agentūrose. Be to, studijų metu išlavintas analitinis mąstymas padeda
+                        specializuotis nestandartinių įžvalgų bei kritinio mąstymo reikalaujančiose srityse. Sociologijos
+                        absolventai dirba derybininkais, projektų vadovais, marketingo specialistais, reklamos kūrėjais,
+                        žurnalistais – analitikais, svarbiais specialistais nevyriausybinėse organizacijose arba valstybės
+                        institucijose. Be to, visuomet galima pasirinkti ir mokslininko karjerą – toliau tęsti studijas universitete,
+                        įsitraukti į mokslinius tyrimus bei projektus, tapti dėstytoju (-a). </p>
+                    <p class="content__paragraph">Taigi sociologijos mokslas atveria plačias galimybes tiek karjeros, tiek asmeninio tobulėjimo srityse.
+                        Šiose studijose save atrasti gali tiek tiksliųjų mokslų mylėtojas (-a), tiek labiau į kūrybą linkęs
+                        ir menišką pajautimą turintis asmuo. Jas galima suderinti tarpusavyje arba tiesiog natūraliai nukrypstama
+                        į kažkurią iš šių sričių. Be to, studijuojant nejučiomis pradedi suvokti, jog sociologinis mąstymas,
+                        vertinant visuomenėje vykstančius reiškinius, pamažu tampa neatsiejama tavo gyvenimo dalimi, o kritinis
+                        žvilgsnis padeda į kasdienines tarpusavio sąveikas pažvelgti giliau, suvokti, kaip iš tiesų viskas
+                        yra sukonstruota (o ne tik tai, kaip pateikiama). 4 studijų metai mums buvo vienas įdomiausių ir
+                        daug žinių davęs gyvenimo etapas. Būdami abiturientais nestigome drąsos pasirinkti mus dominančią,
+                        o ne vieną iš populiariausių, studijų kryptį ir dabar galime dar drąsiau teigti, jog nesigailime.
+                        Taigi, pats laikas nebetikėti nugirstais stereotipiniais atsiliepimais, apie sociologiją ir iš arčiau
+                        susipažinti su šiuo, šiuolaikinei mūsų visuomenei ypač reikalingu, mokslu ir įdomia, kritinį žvilgsnį
+                        ugdančia, studijų kryptimi.</p>
+                </section>
+                <p class="content__paragraph">Tekstas perspausdintas iš delfi.lt</p>
+            </section>
+            <section class="content">
+                <div class="my-gallery content__gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure class="gallery__photo--main" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="assets/Images/Sociologija_post_suGalerija_desk.jpg" itemprop="contentUrl" data-size="1000x667">
+                            <img src="assets/Images/Sociologija_post_suGalerija_desk.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure class="gallery__photo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="assets/Images/Sociologija1_post_suGalerija_desk.jpg" itemprop="contentUrl" data-size="1000x665">
+                            <img src="assets/Images/Sociologija1_post_suGalerija_desk.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+                    <figure class="gallery__photo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="assets/Images/Sociologija2_post_suGalerija_desk.jpg" itemprop="contentUrl" data-size="1000x667">
+                            <img src="assets/Images/Sociologija2_post_suGalerija_desk.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+
+
+                </div>
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                    <!-- Background of PhotoSwipe. 
+                             It's a separate element as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+                        <!-- Container that holds slides. 
+                                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                                Don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+
+                            <div class="pswp__top-bar">
+
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                <div class="pswp__counter"></div>
+
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                            </button>
+
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                            </button>
+
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
         </article>
     </main>
-
-<!-- Footre -->
-	<footer class="container-fluid">
+    <!-- Footer -->
+    <footer class="container-fluid">
         <p class="h2 text-center">KONTAKTAI</p>
         <div class="row d-flex justify-content-center">
             <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
                 <div class="media d-flex align-items-center">
                     <div class="point"></div>
                     <div class="wid">
-                        <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br>
-                        Universiteto g. 9/1</p>
+                        <p class="margin-bottom center-me">VU Filosofijos fakultetas,
+                            <br> Universiteto g. 9/1</p>
                     </div>
                 </div>
             </div>
@@ -190,278 +358,219 @@
             </div>
         </div>
     </footer>
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-        <!-- Background of PhotoSwipe. 
-             It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-    
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-    
-            <!-- Container that holds slides. 
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-    
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-    
-                <div class="pswp__top-bar">
-    
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-    
-                    <div class="pswp__counter"></div>
-    
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-    
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-    
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-    
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-    
-                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                          <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div> 
-                </div>
-    
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-    
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-    
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-    
-            </div>
-    
-        </div>
-    
-    </div>
- <script>
-        var initPhotoSwipeFromDOM = function(gallerySelector) {
+    <!-- Script PhotoSwipe initial gallery  -->
+    <script>
+        var initPhotoSwipeFromDOM = function (gallerySelector) {
 
-        // parse slide data (url, title, size ...) from DOM elements 
-        // (children of gallerySelector)
-        var parseThumbnailElements = function(el) {
-            var thumbElements = el.childNodes,
-                numNodes = thumbElements.length,
-                items = [],
-                figureEl,
-                linkEl,
-                size,
-                item;
+            // parse slide data (url, title, size ...) from DOM elements 
+            // (children of gallerySelector)
+            var parseThumbnailElements = function (el) {
+                var thumbElements = el.childNodes,
+                    numNodes = thumbElements.length,
+                    items = [],
+                    figureEl,
+                    linkEl,
+                    size,
+                    item;
 
-            for(var i = 0; i < numNodes; i++) {
+                for (var i = 0; i < numNodes; i++) {
 
-                figureEl = thumbElements[i]; // <figure> element
+                    figureEl = thumbElements[i]; // <figure> element
 
-                // include only element nodes 
-                if(figureEl.nodeType !== 1) {
-                    continue;
+                    // include only element nodes 
+                    if (figureEl.nodeType !== 1) {
+                        continue;
+                    }
+
+                    linkEl = figureEl.children[0]; // <a> element
+
+                    size = linkEl.getAttribute('data-size').split('x');
+
+                    // create slide object
+                    item = {
+                        src: linkEl.getAttribute('href'),
+                        w: parseInt(size[0], 10),
+                        h: parseInt(size[1], 10)
+                    };
+
+
+
+                    if (figureEl.children.length > 1) {
+                        // <figcaption> content
+                        item.title = figureEl.children[1].innerHTML;
+                    }
+
+                    if (linkEl.children.length > 0) {
+                        // <img> thumbnail element, retrieving thumbnail url
+                        item.msrc = linkEl.children[0].getAttribute('src');
+                    }
+
+                    item.el = figureEl; // save link to element for getThumbBoundsFn
+                    items.push(item);
                 }
 
-                linkEl = figureEl.children[0]; // <a> element
-
-                size = linkEl.getAttribute('data-size').split('x');
-
-                // create slide object
-                item = {
-                    src: linkEl.getAttribute('href'),
-                    w: parseInt(size[0], 10),
-                    h: parseInt(size[1], 10)
-                };
-
-
-
-                if(figureEl.children.length > 1) {
-                    // <figcaption> content
-                    item.title = figureEl.children[1].innerHTML; 
-                }
-
-                if(linkEl.children.length > 0) {
-                    // <img> thumbnail element, retrieving thumbnail url
-                    item.msrc = linkEl.children[0].getAttribute('src');
-                } 
-
-                item.el = figureEl; // save link to element for getThumbBoundsFn
-                items.push(item);
-            }
-
-            return items;
-        };
-
-        // find nearest parent element
-        var closest = function closest(el, fn) {
-            return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-        };
-
-        // triggers when user clicks on thumbnail
-        var onThumbnailsClick = function(e) {
-            e = e || window.event;
-            e.preventDefault ? e.preventDefault() : e.returnValue = false;
-
-            var eTarget = e.target || e.srcElement;
-
-            // find root element of slide
-            var clickedListItem = closest(eTarget, function(el) {
-                return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
-            });
-
-            if(!clickedListItem) {
-                return;
-            }
-
-            // find index of clicked item by looping through all child nodes
-            // alternatively, you may define index via data- attribute
-            var clickedGallery = clickedListItem.parentNode,
-                childNodes = clickedListItem.parentNode.childNodes,
-                numChildNodes = childNodes.length,
-                nodeIndex = 0,
-                index;
-
-            for (var i = 0; i < numChildNodes; i++) {
-                if(childNodes[i].nodeType !== 1) { 
-                    continue; 
-                }
-
-                if(childNodes[i] === clickedListItem) {
-                    index = nodeIndex;
-                    break;
-                }
-                nodeIndex++;
-            }
-
-
-
-            if(index >= 0) {
-                // open PhotoSwipe if valid index found
-                openPhotoSwipe( index, clickedGallery );
-            }
-            return false;
-        };
-
-        // parse picture index and gallery index from URL (#&pid=1&gid=2)
-        var photoswipeParseHash = function() {
-            var hash = window.location.hash.substring(1),
-            params = {};
-
-            if(hash.length < 5) {
-                return params;
-            }
-
-            var vars = hash.split('&');
-            for (var i = 0; i < vars.length; i++) {
-                if(!vars[i]) {
-                    continue;
-                }
-                var pair = vars[i].split('=');  
-                if(pair.length < 2) {
-                    continue;
-                }           
-                params[pair[0]] = pair[1];
-            }
-
-            if(params.gid) {
-                params.gid = parseInt(params.gid, 10);
-            }
-
-            return params;
-        };
-
-        var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
-            var pswpElement = document.querySelectorAll('.pswp')[0],
-                gallery,
-                options,
-                items;
-
-            items = parseThumbnailElements(galleryElement);
-
-            // define options (if needed)
-            options = {
-
-                // define gallery index (for URL)
-                galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-
-                getThumbBoundsFn: function(index) {
-                    // See Options -> getThumbBoundsFn section of documentation for more info
-                    var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
-                        pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-                        rect = thumbnail.getBoundingClientRect(); 
-
-                    return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-                }
-
+                return items;
             };
 
-            // PhotoSwipe opened from URL
-            if(fromURL) {
-                if(options.galleryPIDs) {
-                    // parse real index when custom PIDs are used 
-                    // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-                    for(var j = 0; j < items.length; j++) {
-                        if(items[j].pid == index) {
-                            options.index = j;
-                            break;
+            // find nearest parent element
+            var closest = function closest(el, fn) {
+                return el && (fn(el) ? el : closest(el.parentNode, fn));
+            };
+
+            // triggers when user clicks on thumbnail
+            var onThumbnailsClick = function (e) {
+                e = e || window.event;
+                e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                var eTarget = e.target || e.srcElement;
+
+                // find root element of slide
+                var clickedListItem = closest(eTarget, function (el) {
+                    return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                });
+
+                if (!clickedListItem) {
+                    return;
+                }
+
+                // find index of clicked item by looping through all child nodes
+                // alternatively, you may define index via data- attribute
+                var clickedGallery = clickedListItem.parentNode,
+                    childNodes = clickedListItem.parentNode.childNodes,
+                    numChildNodes = childNodes.length,
+                    nodeIndex = 0,
+                    index;
+
+                for (var i = 0; i < numChildNodes; i++) {
+                    if (childNodes[i].nodeType !== 1) {
+                        continue;
+                    }
+
+                    if (childNodes[i] === clickedListItem) {
+                        index = nodeIndex;
+                        break;
+                    }
+                    nodeIndex++;
+                }
+
+
+
+                if (index >= 0) {
+                    // open PhotoSwipe if valid index found
+                    openPhotoSwipe(index, clickedGallery);
+                }
+                return false;
+            };
+
+            // parse picture index and gallery index from URL (#&pid=1&gid=2)
+            var photoswipeParseHash = function () {
+                var hash = window.location.hash.substring(1),
+                    params = {};
+
+                if (hash.length < 5) {
+                    return params;
+                }
+
+                var vars = hash.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    if (!vars[i]) {
+                        continue;
+                    }
+                    var pair = vars[i].split('=');
+                    if (pair.length < 2) {
+                        continue;
+                    }
+                    params[pair[0]] = pair[1];
+                }
+
+                if (params.gid) {
+                    params.gid = parseInt(params.gid, 10);
+                }
+
+                return params;
+            };
+
+            var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+                var pswpElement = document.querySelectorAll('.pswp')[0],
+                    gallery,
+                    options,
+                    items;
+
+                items = parseThumbnailElements(galleryElement);
+
+                // define options (if needed)
+                options = {
+
+                    // define gallery index (for URL)
+                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                    getThumbBoundsFn: function (index) {
+                        // See Options -> getThumbBoundsFn section of documentation for more info
+                        var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                            rect = thumbnail.getBoundingClientRect();
+
+                        return {
+                            x: rect.left,
+                            y: rect.top + pageYScroll,
+                            w: rect.width
+                        };
+                    }
+
+                };
+
+                // PhotoSwipe opened from URL
+                if (fromURL) {
+                    if (options.galleryPIDs) {
+                        // parse real index when custom PIDs are used 
+                        // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                        for (var j = 0; j < items.length; j++) {
+                            if (items[j].pid == index) {
+                                options.index = j;
+                                break;
+                            }
                         }
+                    } else {
+                        // in URL indexes start from 1
+                        options.index = parseInt(index, 10) - 1;
                     }
                 } else {
-                    // in URL indexes start from 1
-                    options.index = parseInt(index, 10) - 1;
+                    options.index = parseInt(index, 10);
                 }
-            } else {
-                options.index = parseInt(index, 10);
+
+                // exit if index not found
+                if (isNaN(options.index)) {
+                    return;
+                }
+
+                if (disableAnimation) {
+                    options.showAnimationDuration = 0;
+                }
+
+                // Pass data to PhotoSwipe and initialize it
+                gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+
+            // loop through all gallery elements and bind events
+            var galleryElements = document.querySelectorAll(gallerySelector);
+
+            for (var i = 0, l = galleryElements.length; i < l; i++) {
+                galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                galleryElements[i].onclick = onThumbnailsClick;
             }
 
-            // exit if index not found
-            if( isNaN(options.index) ) {
-                return;
+            // Parse URL and open gallery if it contains #&pid=3&gid=1
+            var hashData = photoswipeParseHash();
+            if (hashData.pid && hashData.gid) {
+                openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
             }
-
-            if(disableAnimation) {
-                options.showAnimationDuration = 0;
-            }
-
-            // Pass data to PhotoSwipe and initialize it
-            gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-            gallery.init();
-        };
-
-        // loop through all gallery elements and bind events
-        var galleryElements = document.querySelectorAll( gallerySelector );
-
-        for(var i = 0, l = galleryElements.length; i < l; i++) {
-            galleryElements[i].setAttribute('data-pswp-uid', i+1);
-            galleryElements[i].onclick = onThumbnailsClick;
-        }
-
-        // Parse URL and open gallery if it contains #&pid=3&gid=1
-        var hashData = photoswipeParseHash();
-        if(hashData.pid && hashData.gid) {
-            openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
-        }
         };
 
         // execute above function
-        initPhotoSwipeFromDOM('.my-gallery');
+        initPhotoSwipeFromDOM('.content__gallery');
     </script>
 </body>
+
 </html>
