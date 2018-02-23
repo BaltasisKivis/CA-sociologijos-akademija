@@ -209,7 +209,7 @@ font-family: 'Raleway', sans-serif;
   min-width: 100%;
   margin: 1rem 0;
 }
-.block__article:nth-of-type(odd){
+.block__article:nth-of-type(even){
   flex-direction: row-reverse;
   text-align: right;
 }
@@ -221,7 +221,11 @@ font-family: 'Raleway', sans-serif;
   background-color: rgba(0, 0, 0, 0.3);
   flex: 1;
   font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (992 - 300)));
-
+  padding-left: 1rem;
+}
+.block__article:nth-of-type(even) .block__article--content{
+  padding-left: 0;
+  padding-right: 1rem;
 }
 .block__article--header{
   font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (992 - 300)));
