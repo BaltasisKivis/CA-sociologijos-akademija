@@ -1,6 +1,10 @@
 :root {
   font-size: 16px; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif; }
@@ -251,7 +255,7 @@ body {
   text-transform: uppercase;
   width: 50%;
   font-size: 7em;
-  font-weight: bolder;
+  font-weight: 900;
   margin-bottom: 5rem;
   margin-right: 9rem; }
 
@@ -637,10 +641,14 @@ body {
     bottom: 2rem; } }
 
 @media (min-width: 992px) {
+  body {
+    overflow-x: hidden; }
   .section__pirma {
-    height: 75vh; }
+    height: 79vh;
+    width: 101%;
+    margin-left: -1px; }
   .section__antra {
-    height: 70vh;
+    height: 80vh;
     background-position: 8.5vw 0; }
   .section__heading {
     font-size: 3.5vw; }
@@ -661,10 +669,11 @@ body {
   .vidinis__person--name::after {
     display: none; }
   .section__komanda {
-    height: 65vh;
+    height: 80vh;
     background-image: url("images/linijos-komanda.svg");
     justify-content: flex-start;
-    font-size: 5vw; }
+    font-size: 5vw;
+    margin-top: 5rem; }
   .section__komanda::before {
     display: none; }
   .section__komanda__vidinis {
@@ -770,7 +779,7 @@ body {
     box-shadow: 0 5px 15px black;
     left: -3.675vw; }
   .section__renginiai {
-    height: 100vh;
+    height: 110vh;
     background-image: url("images/linijos-renginiai.svg");
     background-size: cover;
     background-position: 100px 0;
@@ -784,7 +793,8 @@ body {
   .section__heading--renginiai {
     position: relative; }
   .section__heading--renginiai::after {
-    display: block; }
+    display: block;
+    box-shadow: 0 7px 15px black; }
   .renginiai__container {
     flex-direction: row;
     height: auto;
@@ -811,8 +821,10 @@ body {
     margin-top: 0; }
   .diena {
     border-right: none;
-    border-bottom: 1px solid gray;
-    font-size: 1.1em; }
+    border-bottom: 2px solid white;
+    font-size: 1.1em;
+    width: auto;
+    align-self: center; }
   .laikas {
     font-size: 0.8em; }
   .vieta {
@@ -825,4 +837,6 @@ body {
     position: relative; }
   .skaityti--antra {
     bottom: 0;
-    right: 0; } }
+    right: 0; }
+  .skaityti:hover a {
+    color: black; } }
