@@ -238,7 +238,11 @@ body {
 .interview__heading {
   align-self: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 50px; }
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+  
 
 .interview__heading::before {
   content: "";
@@ -274,8 +278,9 @@ body {
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 50px;
+  text-transform: uppercase;
   color: #333333; }
   @media (max-width: 991px) {
     .aboutus__title:before {
@@ -375,11 +380,13 @@ body {
     .interview__article {
       font-size: 16px;
       width: 60%;
-      max-width: 850px; } }
+      max-width: 850px;
+      text-align: left; } }
 
 .interview__article--heading {
-  align-self: center;
-  padding-top: 4rem; }
+  align-self: left;
+  padding-top: 4rem;
+  font-weight: 700; }
 
 .interview__article--break {
   align-self: center;
