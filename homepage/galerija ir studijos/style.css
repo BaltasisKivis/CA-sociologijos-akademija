@@ -74,11 +74,66 @@ body {
 .section__heading--galerija::after {
   left: -62.5px; }
 
+.skaityti {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1rem;
+  bottom: 15vh;
+  right: 150px; }
+
+.skaityti::after {
+  content: "";
+  background-image: url("images/db-arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: calc(50% - 6px);
+  right: -20px; }
+
+.skaityti--galerija {
+  bottom: 150px; }
+
 .section__studijos {
   background-image: url("images/linijos-studijos.svg");
   background-color: #FFBE08;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 34rem; }
+  .section__studijos .studijos {
+    display: flex;
+    align-items: center;
+    width: 80vw; }
+    .section__studijos .studijos .section__heading--studijos {
+      position: absolute;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      right: 77vw; }
+    .section__studijos .studijos .section__heading--studijos::after {
+      background-color: #333338; }
+    .section__studijos .studijos .studijos__item {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .section__studijos .studijos .studijos__item img {
+        height: 5rem;
+        margin-bottom: 2rem; }
+      .section__studijos .studijos .studijos__item h3 {
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400; }
+      .section__studijos .studijos .studijos__item p {
+        line-height: 1.5;
+        text-align: center;
+        font-size: 1.5; }
+
+.skaityti--galerija, .skaityti--studijos {
+  color: black; }
 
 @media (max-width: 1030px) {
   .section__content--galerija {
@@ -86,7 +141,19 @@ body {
     margin-right: 0;
     margin-left: 0; }
     .section__content--galerija .section__heading--galerija {
-      margin-left: 0; } }
+      margin-left: 0; }
+  .section__studijos .studijos {
+    align-items: unset; }
+    .section__studijos .studijos .section__heading--studijos {
+      left: 0;
+      right: 0;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      text-align: center;
+      margin-top: 3rem; }
+    .section__studijos .studijos .section__heading--studijos::after {
+      left: calc(50% - 25px);
+      top: calc(-3rem + -25px); } }
 
 @media (max-width: 710px) {
   .section__galerija::before {
@@ -121,4 +188,60 @@ body {
       margin-right: 0; }
     .section__content--galerija .galerija__antra {
       order: -1;
-      margin-right: 4%; } }
+      margin-right: 4%; }
+  .section__studijos {
+    background-image: none; }
+    .section__studijos .studijos {
+      flex-direction: column;
+      width: 100%; }
+      .section__studijos .studijos .section__heading--studijos {
+        font-size: 1.6rem; }
+      .section__studijos .studijos .studijos__item {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        z-index: 1;
+        background-color: #FFBE08; }
+        .section__studijos .studijos .studijos__item img {
+          flex-grow: 1;
+          height: 2.6rem;
+          max-width: 3.3rem;
+          padding: 1.8rem;
+          margin-bottom: 0; }
+        .section__studijos .studijos .studijos__item .textContainer {
+          flex-grow: 1;
+          max-width: 65vw; }
+          .section__studijos .studijos .studijos__item .textContainer h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            text-align: left;
+            font-weight: 700; }
+          .section__studijos .studijos .studijos__item .textContainer p {
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1.3; }
+      .section__studijos .studijos .studijos__item--first {
+        margin-top: 6.5rem; }
+      .section__studijos .studijos .studijos__item--third {
+        margin-bottom: 4rem; }
+  .section__studijos::before {
+    content: url(images/v-linija-studijos.svg);
+    width: 2.4px;
+    position: absolute;
+    left: calc(50% - 1px);
+    z-index: 0; }
+  .section__studijos::after {
+    content: url(images/v-linija-studijos.svg);
+    width: 2.1px;
+    position: absolute;
+    left: calc(50% - 1px);
+    bottom: 0;
+    z-index: 0; }
+  .skaityti--galerija, .skaityti--studijos {
+    bottom: 50px;
+    right: 30px;
+    font-size: 0.7rem; }
+  .skaityti::after {
+    width: 9px;
+    height: 10px;
+    right: -15px; } }
