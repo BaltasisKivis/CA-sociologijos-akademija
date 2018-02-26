@@ -2,10 +2,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Blog post</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Blog post</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -14,11 +18,74 @@
   <body>
   <!-- NAVIGATION -->
 
-    <nav>
-    </nav>
+  <nav class="navbar navbar-expand-lg navigation">
+    <div class="navigation__logo navigation__logo--small">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+      <div class="navbar-nav navigation__group">
+        <div class="nav-item dropdown">
+          <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">APIE MUS</a>
+            <a class="dropdown-item" href="#">KOMANDA</a>
+          </div>
+        </div>
+          <a href="" class="nav-item nav-link navigation__item">renginiai</a>
+          <a href="" class="nav-item nav-link navigation__item">galerija</a>
+          <div class="nav-item nav-link navigation__logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <a href="" class="nav-item nav-link navigation__item">studijos</a>
+          <a href="" class="nav-item nav-link navigation__item">blogas</a>
+          <a href="" class="nav-item nav-link navigation__item">atsiliepimai</a>
+          <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+      </div>
+    </div>
+    <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+  </nav>
+
+  <!-- registracija -->
+
+  <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+        <div class="modal-header">
+          <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+        </div>
+        <div class="modal-body">
+          <form class="modal-form">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Vardas:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Pavardė:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <input type="submit" value="SIŲSTI" class="modal-button">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- HEADER -->
-    <header class="blog">      
+    <header class="blog">
       <ul class="blog-breadcrumbs">
         <li><a href="Pagrindinis">Pagrindinis </a> <i class="fa fa-angle-double-right"></i></li>
         <li><a href="Blogas">Blogas </a> <i class="fa fa-angle-double-right"></i></li>
@@ -26,7 +93,7 @@
       </ul>
 
       <div class="blog-heading">
-        <h1>apie <br>tarpasmeninius <br>santykius <br>sociologiškai</h1>
+        apie <br>tarpasmeninius <br>santykius <br>sociologiškai
       </div>
     </header>
 
@@ -118,32 +185,33 @@
     <section class="other">
       <h2>Kiti įrašai</h2>
       <div class="posts">
-        <article class="card">
-            <img src="images/Bubble_blog_desk.jpg">
+        <article class="post-card">
+          <img class="right-image" src="images/Bubble_blog_desk.jpg">
+          <main>
             <h3>Vasara pro sociologinius akinius...</h3>
-          <main>
             <p class="card-date">2017 Kovo 17</p>
-            <p>Kai vieni ėmė džiaugtis atostogomis, Sociologijos akademijos komanda, nepasiduodama saulėtų dienų vilionėms, patraukė dirbti į Žeimius – pirmąją Sociologijos akademijos Vasaros stovyklą. </p>
+            <p class="right-text">Kai vieni ėmė džiaugtis atostogomis, Sociologijos akademijos komanda, nepasiduodama saulėtų dienų vilionėms, patraukė dirbti į Žeimius – pirmąją Sociologijos akademijos Vasaros stovyklą. </p>
+            <a href="#">SKAITYTI TOLIAU</a>
           </main>
-          <a href="#">SKAITYTI TOLIAU</a>
         </article>
-        <article class="card">
-            <img src="images/HumanAndDog_blog_desk.jpg">
-            <h3>“Insaideriai” ir “autsaideriai”, arba dominuojantys ir atstumtieji</h3>
+        <article class="post-card">
+          <img src="images/HumanAndDog_blog_desk.jpg">
           <main>
+            <h3>“Insaideriai” ir “autsaideriai”, arba dominuojantys ir atstumtieji</h3>
             <p class="card-date">2017 Vasario 12</p>
             <p>Ar kada teko susimąstyti, kodėl kai kuriuos žmones mes priimame kaip sau lygius, o kitus tiesiog atstumiame, nors gerai jų net nepažįstame? </p>
-          </main>
-          <a href="#">SKAITYTI TOLIAU</a>
+            <a href="#">SKAITYTI TOLIAU</a>
+        </main>
+
         </article>
-        <article class="card">
-            <img src="images/Plant_blog_desk.jpg">
-            <h3>Kas yra sociologija?</h3>
+        <article class="post-card">
+          <img class="right-image" src="images/Plant_blog_desk.jpg">
           <main>
+            <h3>Kas yra sociologija?</h3>
             <p class="card-date">2017 sausio 10</p>
-            <p>Norint suprasti, kas yra visuomenė, verta ją palyginti su kitokio pobūdžio žmonių visuma – bendruomene. Bendruomenę sudaro žymiai mažiau žmonių nei visuomenę. </p>
+            <p class="right-text">Norint suprasti, kas yra visuomenė, verta ją palyginti su kitokio pobūdžio žmonių visuma – bendruomene. Bendruomenę sudaro žymiai mažiau žmonių nei visuomenę. </p>
+            <a href="#">SKAITYTI TOLIAU</a>
           </main>
-          <a href="#">SKAITYTI TOLIAU</a>
         </article>
       </div>
       <button type="button" name="button">RODYTI DAUGIAU</button>
@@ -151,8 +219,48 @@
 
   <!-- KONTAKTAI -->
 
-    <footer>
-    </footer>
+  <footer class="container-fluid">
+    <p class="h2 text-center">KONTAKTAI</p>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="point"></div>
+          <div class="wid">
+            <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br>
+            Universiteto g. 9/1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="mail"></div>
+          <div class="wid">
+            <p class="margin-bottom">www.fsf.vu.lt</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="face"></div>
+          <div class="wid">
+            <p class="margin-bottom">FB: Sociologijos akademija</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="media d-flex align-items-center">
+          <div class="mail"></div>
+          <div class="wid">
+            <p class="margin-bottom">tel.: +370 000 00000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
