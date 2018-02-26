@@ -9,6 +9,9 @@ font-family: 'Raleway', sans-serif;
 .navigation {
   z-index: 1030;
 }
+.navigation__logo--small{
+  top: 15%;
+}
 .block__header{
   background-image: url('../images/Blog_titulineNuotrauka_desk.jpg');
   background-repeat: no-repeat;
@@ -135,6 +138,11 @@ font-family: 'Raleway', sans-serif;
       -ms-flex-align: center;
           align-items: center;
 }
+.block__article--mobile-link{
+color: var(--black);
+pointer-events: none;
+cursor: text;
+}
 .block__article--text{
   margin-top: 1rem;
   margin-bottom: 0;
@@ -154,6 +162,9 @@ font-family: 'Raleway', sans-serif;
   position: absolute;
   left: 4.6rem;
   top: 0.25rem;
+}
+.block__article--read-more:hover{
+  color: var(--black);
 }
 .block__button{
   width: 12rem;
@@ -257,6 +268,11 @@ font-family: 'Raleway', sans-serif;
   font-size: calc(10px + (32 - 10) * ((100vw - 300px) / (992 - 300)));
   border-bottom: 2px solid white;
   min-height: 1rem;
+}
+.block__article--mobile-link, .block__article--mobile-link:hover{
+  color: white;
+  pointer-events: unset;
+  cursor: auto;
 }
 .block__article--text-mobile{
   margin-top: 1rem;
