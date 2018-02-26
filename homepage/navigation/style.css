@@ -10,7 +10,8 @@ body {
 
 .navbar-toggler {
   width: 20%;
-  height: 100%; }
+  height: 100%;
+}
 
 .navbar-toggler:focus {
   outline: none; }
@@ -20,38 +21,65 @@ body {
 
 .navigation {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FFBE08;
   width: 100%;
   height: 4.5rem;
   text-transform: uppercase;
   padding: 0;
-  font-size: 13px; }
+  font-size: 13px;
+  z-index: 1030;
+}
 
 .navigation__logo {
   display: none;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1em;
   width: 4.5em;
   height: 4.5em;
   background-color: #333338;
   border-radius: 50%;
-  box-shadow: 0px 5px 10px black; }
+  -webkit-box-shadow: 0px 5px 10px black;
+          box-shadow: 0px 5px 10px black; }
 
 .navigation__logo img {
   width: 50%;
   height: 50%;
   margin-left: 5px; }
-
+.navigation__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .navigation__logo--small {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   left: calc(50% - 30px);
-  z-index: 9; }
+  z-index: 9;
+  top: 0.7rem;
+}
 
 .navigation__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.3em; }
 
@@ -59,7 +87,8 @@ body {
   display: none;
   position: absolute;
   right: 1em;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 0.5em 2.2em;
   border-radius: 20px;
   background-color: #333338;
@@ -116,23 +145,42 @@ body {
   .dropdown-menu.show::before {
     display: block; }
   .navigation__inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .navigation__button {
     display: block; }
   .navigation__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.3em; }
   .navigation__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
   .navigation__logo--small {
     display: none; }
   .navigation {
-    justify-content: center; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media (max-width: 1300px) {
   .navigation__group, .navigation__button {
@@ -180,21 +228,28 @@ body {
   top: calc(50% - 0.6em);
   right: -1.5em;
   border-radius: 50%;
-  box-shadow: 0 10px 20px grey; }
+  -webkit-box-shadow: 0 10px 20px grey;
+          box-shadow: 0 10px 20px grey; }
 
 .col-form-label::after {
   content: "*";
   color: red; }
 
 .modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
 
 .modal-button {
   background-color: #FFBE08;
   border: none;
   color: white;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 0.5em 3em;
   border-radius: 20px;
   width: 40%;
