@@ -11,210 +11,215 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navigation">
-        <a href="../homepage/index.html">
-            <div class="navigation__logo navigation__logo--small">
-                <img src="images/logo.svg" alt="">
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navigation">
+            <a href="">
+                <div class="navigation__logo navigation__logo--small">
+                    <img src="images/logo.svg" alt="">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+                <div class="navbar-nav navigation__group">
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">apie</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../apie-mus/index.html">APIE MUS</a>
+                            <a class="dropdown-item" href="../komanda/index.html">KOMANDA</a>
+                        </div>
+                    </div>
+                    <a href="../renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
+                    <a href="../galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
+                    <a href="../homepage/index.html">
+                        <div class="nav-item nav-link navigation__logo">
+                                <img src="images/logo.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="../studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
+                    <a href="../blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
+                    <a href="../homepage/index.html#atsiliepimai" class="nav-item nav-link navigation__item">atsiliepimai</a>
+                    <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+                </div>
             </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
-            <div class="navbar-nav navigation__group">
-                <div class="nav-item dropdown">
-                    <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">apie</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="../apie-mus/index.html">APIE MUS</a>
-                        <a class="dropdown-item" href="../komanda/index.html">KOMANDA</a>
+            <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+        </nav>
+        <!-- REGISTRATION MODAL  -->
+        <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal-form">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Vardas:</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Pavardė:</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <input type="submit" value="SIŲSTI" class="modal-button">
+                        </form>
                     </div>
                 </div>
-                <a href="../renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
-                <a href="../galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
-                <a href="../homepage/index.html">
-                    <div class="nav-item nav-link navigation__logo">
-                        <img src="images/logo.svg" alt="">
-                    </div>
-                </a>
-                <a href="../studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
-                <a href="../blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
-                <a href="../homepage/index.html#atsiliepimai" class="nav-item nav-link navigation__item">atsiliepimai</a>
-                <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
             </div>
         </div>
-        <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
-    </nav>
+    <!-- Main content -->
+    <main class="maincontent">
+        <!-- Start of ABOUTUS section -->
+        <section class="aboutus">
+            <header class="aboutus__header">
+                <h2 class="aboutus__title">APIE</h2>
+            </header>
+            <p class="aboutus__text">
+                Sociologijos akademija - Neformali organizacija, siekianti parodyti moksleiviams kasdienio gyvenimo aspektus iš sociologijos
+                mokslo perspektyvos. Sociologijos akademija yra grįsta neformalaus ugdymo principais, o jos tiskslas - gilinti
+                10-12 klasių moksleivių žinias sociologijos, pilietiškumo, lyčių studijų, ekonomikos, socialinės atskirties,
+                lingvistikos ir kitose temose, kurios įgalintų moksleivių kritinį mąstymą, argumentuotas diskusijas bei savimonę.
+                Dalyvavimas užsiėmimuose yra nemokamas visiems moksleiviams.
+            </p>
+        </section>
 
-    <!-- Start of ABOUTUS section -->
-    <section class="aboutus">
-        <div class="aboutus__circle">
-            <h2 class="aboutus__title">APIE</h2>
-        </div>
-        <p class="aboutus__text">
-            Sociologijos akademija - Neformali organizacija, siekianti parodyti moksleiviams kasdienio gyvenimo aspektus iš sociologijos
-            mokslo perspektyvos. Sociologijos akademija yra grįsta neformalaus ugdymo principais, o jos tiskslas - gilinti
-            10-12 klasių moksleivių žinias sociologijos, pilietiškumo, lyčių studijų, ekonomikos, socialinės atskirties,
-            lingvistikos ir kitose temose, kurios įgalintų moksleivių kritinį mąstymą, argumentuotas diskusijas bei savimonę.
-            Dalyvavimas užsiėmimuose yra nemokamas visiems moksleiviams.
-        </p>
-    </section>
+        <!-- Video  -->
 
-    <!-- Video  -->
-    <style>
 
-    </style>
-
-    <div class="aboutus__columnbreak">
-        <div class="aboutus__video">
+        <div class="aboutus__columnbreak">
+            <div class="aboutus__video">
                 <div class="video__container">
                     <img class=" aboutus__video--cover" src="images/videocover.jpg" alt="People discussion">
                     <div class="aboutus__video aboutus__video--play"></div>
                 </div>
             </div>
         </div>
-        <img class="aboutus__icon" src="images/icon.svg" alt="Article icon">
+        <!-- <img class="aboutus__icon" src="images/icon.svg" alt="Article icon"> -->
 
 
-    <!-- Start of Interview articles -->
-    <section class="interview">
-        <!-- <div class="interview__circle"></div> -->
-        <h1 class="interview__heading">
-            Interviu su sociologais
-        </h1>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">Sociologija - mokslas, reikalingas šiuolaikinei visuomenei</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Šiuo metu dauguma abiturientų renkasi savo studijų kryptį. Tai ne tik atsakingas, bet ir nerimą bei ilgus apmąstymus keliantis
-                sprendimas. Juk dažnai manoma, kad jis nulemia ateities karjerą, tačiau padaryti tokį svarbų žingsnį kai
-                tau tik 18 ar 19 metų yra pakankamai sudėtinga. Dažnai pasiduodame tėvų, aplinkinių, mokytojų raginimams
-                rinktis tam tikras studijas, net nepagalvodami...
-            </p>
-            <a class="interview__article--readmore" href="../interviu-su-sociologais/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">Socialiai apie sociologiją I: Baumanas troleibuse ir šešėliniai sociologai (Julija)</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Soc. Soc.: Kodėl sociologija? Julija: Atmetus visus gyvenimo serendipitus, rimtos priežastys tikriausiai dvi. Viena vertus,
-                sociologija tiesiog yra labai, labai, labai įdomi. Ir kuo toliau – tuo įdomiau. Kuo daugiau – tuo labiau.
-                Antra vertus, turbūt didžiausias privalumas yra gebėjimų, kurių reikia mokytis (ir mokytis, ir mokytis, ir
-                mokytis) įvairovė...
-            </p>
-            <a class="interview__article--readmore" href="../404/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">Aistra žinoti, drąsa abejoti, pareiga klausti (Agnė)</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Soc. Soc.: Kaip susitikai su sociologija? Kuo ji pasirodė įdomi? Agnė: Tikriausiai tai būtų galima pavadinti profesiniu pašaukimu.
-                Patinka mokslas, patinka socialinis, patinka kažkas apie santykius tarp žmonių, patinka idėja, kad daugelis
-                yra daugiau, nei vienetų suma, patinka nuolatinis savęs užklausimas, ar tikrai toks bendrabūvis, kuriame
-                mes gyvename, yra...
-            </p>
-            <a class="interview__article--readmore" href="../404/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">(Savi)ironijos prisotintos sociologinės vaizduotės šeimininkas (Antanas)</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Kodėl sociologija? Pirma priežastis: todėl, kad visada buvau ganėtinai užsisklendęs savyje marginalas iš probleminės šeimos.
-                Dažniausiai atsidurdavau stipresnių, protingesnių, gabesnių, sėkmingesnių bendraamžių šešėlyje arba grupės
-                užribyje, todėl neteisybės jausmas ir pavydas neleido į visuomeninę tvarką žiūrėti kaip į teisingą...
-            </p>
-            <a class="interview__article--readmore" href="../404/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">Milda ir sociologinis entuziazmas</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Kodėl sociologija? Nuo kada sociologija? Ką apie sociologiją žinojai iki studijų pradžios? Mokyklos laikais labai mėgau skaityti.
-                Knygų skaitymas visuomet, rodos, perkeldavo į kitokį būvį, kuris kartais atrodydavo kur kas malonesnis nei
-                sava kasdienybė bei sukeldavo daug nekasdienių klausimų, apie kuriuos (tada taip atrodė) nepakalbėsi su eiliniu
-                žmogumi iš gatvės. Atrodė, kad kai kurie klausimai...
-            </p>
-            <a class="interview__article--readmore" href="../404/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">„Sociologija yra skaitymas ir rašymas. Tam reikia nemažai kantrybės“ (Regimantas)</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Kodėl sociologija? Atsakymas į tokį klausimą tegali būti supaprastinantis, nes nurodo bambos paieškas. Tai yra, reikalauja
-                atkurti pasirinkimo užsiimti sociologija akimirką, verčia klausti, kuo ypatingas „sociologinis“ mąstymas
-                bei kuo šis skiriasi nuo „ne-sociologinio“ mąstymo? Atsakyti norėčiau palyginimu, prisimindamas Ernestą...
-            </p>
-            <a class="interview__article--readmore" href="../404/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-        <article class="interview interview__article">
-            <h4 class="interview__article--heading">„Sociologas yra žmogus“ (Veronika)</h4>
-            <div class="interview__article--break"></div>
-            <p class="interview__article--text">
-                Soc. Soc.: Kodėl sociologija? Veronika: a) Netyčia. b) Įdomu. c) Tai terapija. d) Tai priklausomybė. e) Visi atsakymai teisingi.
-                Sociologas yra žmogus, kurį nuolat reikia stabdyti (jam viskas įdomu, patologiškai), o ne tas, kurį reikėtų
-                baksnoti į „savaime suprantamus“ dalykus ir aiškinti, kad tai yra keista ir įdomu. Sociologui kyla klausimai...
-            </p>
-            <a class="interview__article--readmore" href="../404/index.html">
-                <strong>Skaityti daugiau</strong>
-                <em>>></em>
-            </a>
-        </article>
-    </section>
+        <!-- Start of Interview articles -->
+        <section class="interview">
+            <!-- <div class="interview__circle"></div> -->
+            <h1 class="interview__heading">
+                Interviu su sociologais
+            </h1>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">Sociologija - mokslas, reikalingas šiuolaikinei visuomenei</h4>
+                <div class="interview__article--break"></div>
+                <p class="interview__article--text">
+                    Šiuo metu dauguma abiturientų renkasi savo studijų kryptį. Tai ne tik atsakingas, bet ir nerimą bei ilgus apmąstymus keliantis
+                    sprendimas. Juk dažnai manoma, kad jis nulemia ateities karjerą, tačiau padaryti tokį svarbų žingsnį
+                    kai tau tik 18 ar 19 metų yra pakankamai sudėtinga. Dažnai pasiduodame tėvų, aplinkinių, mokytojų raginimams
+                    rinktis tam tikras studijas, net nepagalvodami...
+                </p>
+                <a class="interview__article--readmore" href="../interviu-su-sociologais/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">Socialiai apie sociologiją I: Baumanas troleibuse ir šešėliniai sociologai (Julija)</h4>
+                <div class="interview__article--break"></div>
+                <p class="interview__article--text">
+                    Soc. Soc.: Kodėl sociologija? Julija: Atmetus visus gyvenimo serendipitus, rimtos priežastys tikriausiai dvi. Viena vertus,
+                    sociologija tiesiog yra labai, labai, labai įdomi. Ir kuo toliau – tuo įdomiau. Kuo daugiau – tuo labiau.
+                    Antra vertus, turbūt didžiausias privalumas yra gebėjimų, kurių reikia mokytis (ir mokytis, ir mokytis,
+                    ir mokytis) įvairovė...
+                </p>
+                <a class="interview__article--readmore" href="../404/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">Aistra žinoti, drąsa abejoti, pareiga klausti (Agnė)</h4>
+                <hr>
+                <p class="interview__article--text">
+                    Soc. Soc.: Kaip susitikai su sociologija? Kuo ji pasirodė įdomi? Agnė: Tikriausiai tai būtų galima pavadinti profesiniu pašaukimu.
+                    Patinka mokslas, patinka socialinis, patinka kažkas apie santykius tarp žmonių, patinka idėja, kad daugelis
+                    yra daugiau, nei vienetų suma, patinka nuolatinis savęs užklausimas, ar tikrai toks bendrabūvis, kuriame
+                    mes gyvename, yra...
+                </p>
+                <a class="interview__article--readmore" href="../404/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">(Savi)ironijos prisotintos sociologinės vaizduotės šeimininkas (Antanas)</h4>
+                <hr>
+                <p class="interview__article--text">
+                    Kodėl sociologija? Pirma priežastis: todėl, kad visada buvau ganėtinai užsisklendęs savyje marginalas iš probleminės šeimos.
+                    Dažniausiai atsidurdavau stipresnių, protingesnių, gabesnių, sėkmingesnių bendraamžių šešėlyje arba grupės
+                    užribyje, todėl neteisybės jausmas ir pavydas neleido į visuomeninę tvarką žiūrėti kaip į teisingą...
+                </p>
+                <a class="interview__article--readmore" href="../404/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">Milda ir sociologinis entuziazmas</h4>
+                <div class="interview__article--break"></div>
+                <p class="interview__article--text">
+                    Kodėl sociologija? Nuo kada sociologija? Ką apie sociologiją žinojai iki studijų pradžios? Mokyklos laikais labai mėgau skaityti.
+                    Knygų skaitymas visuomet, rodos, perkeldavo į kitokį būvį, kuris kartais atrodydavo kur kas malonesnis
+                    nei sava kasdienybė bei sukeldavo daug nekasdienių klausimų, apie kuriuos (tada taip atrodė) nepakalbėsi
+                    su eiliniu žmogumi iš gatvės. Atrodė, kad kai kurie klausimai...
+                </p>
+                <a class="interview__article--readmore" href="../404/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">„Sociologija yra skaitymas ir rašymas. Tam reikia nemažai kantrybės“ (Regimantas)</h4>
+                <div class="interview__article--break"></div>
+                <p class="interview__article--text">
+                    Kodėl sociologija? Atsakymas į tokį klausimą tegali būti supaprastinantis, nes nurodo bambos paieškas. Tai yra, reikalauja
+                    atkurti pasirinkimo užsiimti sociologija akimirką, verčia klausti, kuo ypatingas „sociologinis“ mąstymas
+                    bei kuo šis skiriasi nuo „ne-sociologinio“ mąstymo? Atsakyti norėčiau palyginimu, prisimindamas Ernestą...
+                </p>
+                <a class="interview__article--readmore" href="../404/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+            <article class="interview interview__article">
+                <h4 class="interview__article--heading">„Sociologas yra žmogus“ (Veronika)</h4>
+                <hr>
+                <p class="interview__article--text">
+                    Soc. Soc.: Kodėl sociologija? Veronika: a) Netyčia. b) Įdomu. c) Tai terapija. d) Tai priklausomybė. e) Visi atsakymai teisingi.
+                    Sociologas yra žmogus, kurį nuolat reikia stabdyti (jam viskas įdomu, patologiškai), o ne tas, kurį reikėtų
+                    baksnoti į „savaime suprantamus“ dalykus ir aiškinti, kad tai yra keista ir įdomu. Sociologui kyla klausimai...
+                </p>
+                <a class="interview__article--readmore" href="../404/index.html">
+                    <strong>Skaityti daugiau</strong>
+                    <em>>></em>
+                </a>
+            </article>
+        </section>
 
-    <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-header">
-                    <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
-                </div>
-                <div class="modal-body">
-                    <form class="modal-form">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Vardas:</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Pavardė:</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">El. Paštas:</label>
-                            <input type="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <input type="submit" value="SIŲSTI" class="modal-button">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
+    </main>
+
+    <!-- 
+    footer
+ -->
     <footer class="container-fluid">
         <p class="h2 text-center">KONTAKTAI</p>
         <div class="row d-flex justify-content-center">
@@ -253,7 +258,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
