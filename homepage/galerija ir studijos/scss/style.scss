@@ -233,12 +233,18 @@ body {
         background-color: #FFBE08;
         z-index: 99;
         left: calc(50% - 25px);
-        top: 7%;
+        top: 6.5vh;
         box-shadow: 0px 7px 40px 1px black;
     }
 
     .section__content--galerija {
         padding: 5rem 2rem;
+        margin-bottom: 4rem;
+
+        .galerija__container {
+            flex-wrap: wrap;
+            z-index: 1;
+        }
 
         .section__heading--galerija {
             font-size: 2rem;
@@ -247,7 +253,7 @@ body {
 
         .section__heading--galerija::before {
             content: url("images/linija-juoda-ilga.svg");
-            width: 2px;
+            width: 5px;
             position: absolute;
             left: calc(50% - 1px);
         }
@@ -258,12 +264,9 @@ body {
 
         .galerija__pirma {
             margin-right: 0;
+            margin-bottom: 10%;
         }
 
-        .galerija__antra {
-            order: -1;
-            margin-right: 4%;
-        }
     }
 
     .section__studijos {
