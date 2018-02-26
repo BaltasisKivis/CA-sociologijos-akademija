@@ -80,8 +80,9 @@ section {
   font-weight: bold;
   font-size: 0.9rem;
   padding-bottom: 3rem;
-  right: 0;
-  bottom: 0;
+}
+.section__blogas__center__read-more a {
+  margin-right: 2rem;
 }
 .section__blogas__center__read-more > a > p {
   color: #fff;
@@ -95,7 +96,7 @@ a:hover {
   width: 1rem;
   height: 1rem;
   position: absolute;
-  margin-left: 22px;
+  /*margin-left: 5px;*/
   margin-top: 3px;
 }
 @media screen and (max-width: 991px) {
