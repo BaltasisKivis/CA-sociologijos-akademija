@@ -1,7 +1,9 @@
 :root {
   font-family: 'Raleway', sans-serif;
 }
-
+.navigation {
+ top: 0;
+}
 body {
   margin: 0;
   padding: 0;
