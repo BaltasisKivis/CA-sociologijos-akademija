@@ -32,7 +32,7 @@ Content block
 .content__header {
   display: flex;
   flex-direction: column;
-  background-image: url(../Images/IntBg.jpg);
+  background-image: url(assets/images/IntBg.jpg);
   background-color: #4d4959;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,7 +46,7 @@ Content block
       height: calc(100vw * 500 / 900); } }
   .content__header--overlay {
     position: absolute;
-    background: url(/../Images/hbgf.png);
+    background: url(assets/images/hbgf.png);
     opacity: 0.7;
     z-index: 0;
     height: calc(100vw * 500 / 1366);
