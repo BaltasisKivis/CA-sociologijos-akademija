@@ -6,12 +6,6 @@ font-family: 'Raleway', sans-serif;
 --grey: #4E4D5C;
 }
 
-.navigation {
-  z-index: 1030;
-}
-.navigation__logo--small{
-  top: 15%;
-}
 .block__header{
   background-image: url('../images/Blog_titulineNuotrauka_desk.jpg');
   background-repeat: no-repeat;
