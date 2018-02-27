@@ -87,8 +87,8 @@
   <!-- HEADER -->
     <header class="blog">
       <ul class="blog-breadcrumbs">
-        <li><a href="Pagrindinis">Pagrindinis </a> <i class="fa fa-angle-double-right"></i></li>
-        <li><a href="Blogas">Blogas </a> <i class="fa fa-angle-double-right"></i></li>
+        <li><a href="../">Pagrindinis </a> <i class="fa fa-angle-double-right"></i></li>
+        <li><a href="../blogas/index.html">Blogas </a> <i class="fa fa-angle-double-right"></i></li>
         <li><strong>Apie tarpasmeninius santykius sociologiškai</strong></li>
       </ul>
 
@@ -155,21 +155,21 @@
       <form class="form" action="index.html" method="post">
         <div class="form-head">
           <label for="comment">Komentaras</label>
-          <textarea name="comment" rows="8" cols="80"></textarea>
+          <textarea name="comment" required rows="8" cols="80"></textarea>
         </div>
         <div class="form-body">
           <div class="name">
             <label for="name">Vardas</label>
-            <input type="text" name="name">
+            <input type="text" required name="name">
           </div>
           <div class="email">
             <label for="email">El. paštas</label>
-            <input type="text" name="email">
+            <input type="email" required name="email">
           </div>
         </div>
         <br>
         <div class="form-footer">
-          <button type="button" name="button">SIŲSTI KOMENTARĄ</button>
+          <button name="button">SIŲSTI KOMENTARĄ</button>
           <div class="fb">
             <i class="fa fa-facebook" aria-hidden="true"></i>
           </div>
@@ -187,7 +187,7 @@
       <div class="posts">
         <article class="post-card">
           <img class="right-image" src="images/Bubble_blog_desk.jpg">
-          <main>
+          <main class="article-body">
             <h3 class="right-text">Vasara pro sociologinius akinius...</h3>
             <p class="card-date right-text">2017 Kovo 17</p>
             <p class="right-text">Kai vieni ėmė džiaugtis atostogomis, Sociologijos akademijos komanda, nepasiduodama saulėtų dienų vilionėms, patraukė dirbti į Žeimius – pirmąją Sociologijos akademijos Vasaros stovyklą. </p>
@@ -196,17 +196,16 @@
         </article>
         <article class="post-card">
           <img src="images/HumanAndDog_blog_desk.jpg">
-          <main>
+          <main class="article-body">
             <h3>“Insaideriai” ir “autsaideriai”, arba dominuojantys ir atstumtieji</h3>
             <p class="card-date">2017 Vasario 12</p>
             <p>Ar kada teko susimąstyti, kodėl kai kuriuos žmones mes priimame kaip sau lygius, o kitus tiesiog atstumiame, nors gerai jų net nepažįstame? </p>
             <a href="#">SKAITYTI TOLIAU</a>
-        </main>
-
+          </main>
         </article>
         <article class="post-card">
           <img class="right-image" src="images/Plant_blog_desk.jpg">
-          <main>
+          <main class="article-body">
             <h3 class="right-text">Kas yra sociologija?</h3>
             <p class="card-date right-text">2017 sausio 10</p>
             <p class="right-text">Norint suprasti, kas yra visuomenė, verta ją palyginti su kitokio pobūdžio žmonių visuma – bendruomene. Bendruomenę sudaro žymiai mažiau žmonių nei visuomenę. </p>
@@ -220,43 +219,43 @@
   <!-- KONTAKTAI -->
 
   <footer class="container-fluid">
-    <p class="h2 text-center">KONTAKTAI</p>
-    <div class="row d-flex justify-content-center">
-      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-        <div class="media d-flex align-items-center">
-          <div class="point"></div>
-          <div class="wid">
-            <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br>
-            Universiteto g. 9/1</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-        <div class="media d-flex align-items-center">
-          <div class="mail"></div>
-          <div class="wid">
-            <p class="margin-bottom">www.fsf.vu.lt</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-        <div class="media d-flex align-items-center">
-          <div class="face"></div>
-          <div class="wid">
-            <p class="margin-bottom">FB: Sociologijos akademija</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-        <div class="media d-flex align-items-center">
-          <div class="mail"></div>
-          <div class="wid">
-            <p class="margin-bottom">tel.: +370 000 00000</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+		<p class="h2 text-center">KONTAKTAI</p>
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+				<div class="media d-flex align-items-center">
+					<div class="point"></div>
+					<div class="wid">
+						<p class="margin-bottom center-me">VU Filosofijos fakultetas,<br>
+						Universiteto g. 9/1</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+				<div class="media d-flex align-items-center">
+					<div class="mail"></div>
+					<div class="wid">
+						<p class="margin-bottom">www.fsf.vu.lt</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+				<div class="media d-flex align-items-center">
+					<div class="face"></div>
+					<div class="wid">
+						<p class="margin-bottom">FB: Sociologijos akademija</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+				<div class="media d-flex align-items-center">
+					<div class="mail"></div>
+					<div class="wid">
+						<p class="margin-bottom">tel.: +370 000 00000</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
