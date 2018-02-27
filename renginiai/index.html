@@ -2,311 +2,315 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Renginiai</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../homepage/navigation/style.css">
+  <link rel="stylesheet" href="../homepage/footer/style.css">
+  <title>Renginiai</title>
 </head>
 
 
 <nav class="navbar navbar-expand-lg navigation">
-    <div class="navigation__logo navigation__logo--small">
-        <img src="media/logo.svg" alt="">
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="navigation__logo navigation__logo--small">
+    <a href="../homepage/index.html">
+      <img src="media/logo.svg" alt="">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
-        <div class="navbar-nav navigation__group">
-            <div class="nav-item dropdown">
-                <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="../apie-mus/index.html">APIE MUS</a>
-                    <a class="dropdown-item" href="../komanda/index.html">KOMANDA</a>
-                </div>
-            </div>
-            <a href="../renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
-            <a href="../galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
-            <a href="../homepage/index.html">
-                <div class="nav-item nav-link navigation__logo">
-                    <img src="media/logo.svg" alt="">
-                </div>
-            </a>
-            <a href="../studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
-            <a href="../blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
-            <a href="../homepage/index.html#atsiliepimai" class="nav-item nav-link navigation__item">atsiliepimai</a>
-            <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+  <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+    <div class="navbar-nav navigation__group">
+      <div class="nav-item dropdown">
+        <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="../apie-mus/index.html">APIE MUS</a>
+          <a class="dropdown-item" href="../komanda/index.html">KOMANDA</a>
         </div>
+      </div>
+      <a href="../renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
+      <a href="../galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
+      <a href="../homepage/index.html">
+        <div class="nav-item nav-link navigation__logo">
+          <img src="media/logo.svg" alt="">
+        </div>
+      </a>
+      <a href="../studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
+      <a href="../blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
+      <a href="../homepage/index.html#atsiliepimai" class="nav-item nav-link navigation__item">atsiliepimai</a>
+      <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
     </div>
-    <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+  </div>
+  <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
 </nav>
 
 <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		<span aria-hidden="true">&times;</span>
 	</button>
-            <div class="modal-header">
-                <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
-            </div>
-            <div class="modal-body">
-                <form class="modal-form">
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Vardas:</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Pavardė:</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">El. Paštas:</label>
-                        <input type="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <input type="submit" value="SIŲSTI" class="modal-button">
-                </form>
-            </div>
-        </div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Vardas:</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Pavardė:</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <input type="submit" value="SIŲSTI" class="modal-button">
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 
 <!--  -->
 <!--  -->
 
 <body>
-    <div class="page__name">
-        <h1>Renginiai</h1>
-        <p class="circle"></p>
+  <div class="page__name">
+    <h1>Renginiai</h1>
+    <p class="circle"></p>
+  </div>
+
+
+  <section class="calendar_block">
+    <div class="left_section">
+      <div class="event1">
+        <div class="event_descr">
+          <h5>Subkultūros: <br> mada ar pasipriešinimas?</h5>
+          <div class="divider_line"></div>
+          <p>2017 05 20 </p>
+          <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
+        </div>
+        <div class="event_photo"></div>
+      </div>
+    </div>
+    <div class="right_calendar">
+      <div class="month">
+        <ul>
+          <li class="prev"></li>
+          <li class="next"></li>
+          <li>
+            Gegužė<br>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="weekdays">
+        <li>Pir</li>
+        <li>Ant</li>
+        <li>Tre</li>
+        <li>Ket</li>
+        <li>Pen</li>
+        <li>Šeš</li>
+        <li>Sek</li>
+      </ul>
+
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li><span class="dot">6</span></li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li><span class="dot">13</span></li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li><span class="active">20</span></li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li><span class="dot">27</span></li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li><span class="inactive">1</span></li>
+        <li><span class="inactive">2</span></li>
+        <li><span class="inactive">3</span></li>
+        <li><span class="inactive">4</span></li>
+      </ul>
     </div>
 
+  </section>
 
-    <section class="calendar_block">
-        <div class="left_section">
-            <div class="event1">
-                <div class="event_descr">
-                    <h5>Subkultūros: <br> mada ar pasipriešinimas?</h5>
-                    <div class="divider_line"></div>
-                    <p>2017 05 20 </p>
-                    <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
-                </div>
-                <div class="event_photo"></div>
-            </div>
-        </div>
-        <div class="right_calendar">
-            <div class="month">
-                <ul>
-                    <li class="prev"></li>
-                    <li class="next"></li>
-                    <li>
-                        Gegužė<br>
-                    </li>
-                </ul>
-            </div>
-
-            <ul class="weekdays">
-                <li>Pir</li>
-                <li>Ant</li>
-                <li>Tre</li>
-                <li>Ket</li>
-                <li>Pen</li>
-                <li>Šeš</li>
-                <li>Sek</li>
-            </ul>
-
-            <ul class="days">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li><span class="dot">6</span></li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li><span class="dot">13</span></li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li><span class="active">20</span></li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li><span class="dot">27</span></li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-                <li><span class="inactive">1</span></li>
-                <li><span class="inactive">2</span></li>
-                <li><span class="inactive">3</span></li>
-                <li><span class="inactive">4</span></li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section class="time_table">
-        <div class="event e_row">
-            <p class="event_time">10.45 - 11.00</p>
-            <p class="event_border">Registracija</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">11.00 - 11.30</p>
-            <p class="event_border">Apšilimas</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">11.30 - 11.50</p>
-            <p class="event_border">Namų darbų aptarimas</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">11.50 - 13.00</p>
-            <p class="event_border">Paskaita "Kuriam Hogvartso koledžui priklauso Šerlokas? arba trumpai apie fanų subkultūrą" (dr. Dalia Čiupailaitė)</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">13.00 - 13.30</p>
-            <p class="event_border">Bendri pietūs fakultete (201 auditorija)</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">13.30 - 15.30</p>
-            <p class="event_border">Filmo “We Are Legion: The History of the Hacktivists” (2012) peržiūra ir diskusija (dokt. Agnė Girkontaitė)</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">15.30 - 15.45</p>
-            <p class="event_border">Arbatos pertrauka (201 auditorija)</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">15.45 - 16.45</p>
-            <p class="event_border">Gyvoji biblioteka: subkultūrų atstovai</p>
-        </div>
-        <p class="row_spacer"></p>
-        <div class="event e_row">
-            <p class="event_time">16.45 - 17.00</p>
-            <p class="event_border">Sociologijos akademijos pažymėjimų įteikimas ir atsisveikinimas</p>
-        </div>
-
-    </section>
-
-
-    <div class="page__new-events">
-        <h1>Artimiausi renginiai</h1>
+  <section class="time_table">
+    <div class="event e_row">
+      <p class="event_time">10.45 - 11.00</p>
+      <p class="event_border">Registracija</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">11.00 - 11.30</p>
+      <p class="event_border">Apšilimas</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">11.30 - 11.50</p>
+      <p class="event_border">Namų darbų aptarimas</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">11.50 - 13.00</p>
+      <p class="event_border">Paskaita "Kuriam Hogvartso koledžui priklauso Šerlokas? arba trumpai apie fanų subkultūrą" (dr. Dalia Čiupailaitė)</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">13.00 - 13.30</p>
+      <p class="event_border">Bendri pietūs fakultete (201 auditorija)</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">13.30 - 15.30</p>
+      <p class="event_border">Filmo “We Are Legion: The History of the Hacktivists” (2012) peržiūra ir diskusija (dokt. Agnė Girkontaitė)</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">15.30 - 15.45</p>
+      <p class="event_border">Arbatos pertrauka (201 auditorija)</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">15.45 - 16.45</p>
+      <p class="event_border">Gyvoji biblioteka: subkultūrų atstovai</p>
+    </div>
+    <p class="row_spacer"></p>
+    <div class="event e_row">
+      <p class="event_time">16.45 - 17.00</p>
+      <p class="event_border">Sociologijos akademijos pažymėjimų įteikimas ir atsisveikinimas</p>
     </div>
 
-    <section class="new_events">
-        <div class="new--event">
-            <div class="photo1"></div>
-            <div class="event_descr2">
-                <h5>Subkultūros: <br> mada ar pasipriešinimas?</h5>
-                <div class="divider_line2"></div>
-                <div class="event--time">
-                    <h5>05 20</h5>
-                    <!-- <div class="divider_line"></div> -->
-                    <p>10.45 - 17.00</p>
-                </div>
-                <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
-            </div>
+  </section>
+
+
+  <div class="page__new-events">
+    <h1>Artimiausi renginiai</h1>
+  </div>
+
+  <section class="new_events">
+    <div class="new--event">
+      <div class="photo1"></div>
+      <div class="event_descr2">
+        <h5>Subkultūros: <br> mada ar pasipriešinimas?</h5>
+        <div class="divider_line2"></div>
+        <div class="event--time">
+          <h5>05 20</h5>
+          <!-- <div class="divider_line"></div> -->
+          <p>10.45 - 17.00</p>
         </div>
+        <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
+      </div>
+    </div>
 
-        <div class="new--event">
-            <div class="photo2"></div>
-            <div class="event_descr2">
-                <h5>Renkantis gyvenimą už visuomenės ribų</h5>
-                <div class="divider_line2"></div>
-                <div class="event--time">
-                    <h5>03 18</h5>
-                    <!-- <div class="divider_line"></div> -->
-                    <p>10.45 - 16.30</p>
-                </div>
-                <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
-            </div>
+    <div class="new--event">
+      <div class="photo2"></div>
+      <div class="event_descr2">
+        <h5>Renkantis gyvenimą už visuomenės ribų</h5>
+        <div class="divider_line2"></div>
+        <div class="event--time">
+          <h5>03 18</h5>
+          <!-- <div class="divider_line"></div> -->
+          <p>10.45 - 16.30</p>
         </div>
+        <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
+      </div>
+    </div>
 
-        <div class="new--event">
-            <div class="photo3"></div>
-            <div class="event_descr2">
-                <h5>Kur (Ne) Stoti? <br> </h5>
-                <div class="divider_line2"></div>
-                <div class="event--time">
-                    <h5>02 18</h5>
-                    <!-- <div class="divider_line"></div> -->
-                    <p>10.45 - 16.30</p>
-                </div>
-                <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
-            </div>
+    <div class="new--event">
+      <div class="photo3"></div>
+      <div class="event_descr2">
+        <h5>Kur (Ne) Stoti? <br> </h5>
+        <div class="divider_line2"></div>
+        <div class="event--time">
+          <h5>02 18</h5>
+          <!-- <div class="divider_line"></div> -->
+          <p>10.45 - 16.30</p>
         </div>
+        <h6>VU Filosofijos fakultetas <br> (Universiteto g. 9/1, 301 aud)</h6>
+      </div>
+    </div>
 
-    </section>
+  </section>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 
 <!--  -->
 <!--  -->
 <footer class="container-fluid">
-    <p class="h2 text-center">KONTAKTAI</p>
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-            <div class="media d-flex align-items-center">
-                <div class="point"></div>
-                <div class="wid">
-                    <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br> Universiteto g. 9/1</p>
-                </div>
-            </div>
+  <p class="h2 text-center">KONTAKTAI</p>
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+      <div class="media d-flex align-items-center">
+        <div class="point"></div>
+        <div class="wid">
+          <p class="margin-bottom center-me">VU Filosofijos fakultetas,<br> Universiteto g. 9/1</p>
         </div>
-        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-            <div class="media d-flex align-items-center">
-                <div class="mail"></div>
-                <div class="wid">
-                    <p class="margin-bottom">www.fsf.vu.lt</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-            <div class="media d-flex align-items-center">
-                <div class="face"></div>
-                <div class="wid">
-                    <p class="margin-bottom">FB: Sociologijos akademija</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-            <div class="media d-flex align-items-center">
-                <div class="mail"></div>
-                <div class="wid">
-                    <p class="margin-bottom">tel.: +370 000 00000</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+      <div class="media d-flex align-items-center">
+        <div class="mail"></div>
+        <div class="wid">
+          <p class="margin-bottom">www.fsf.vu.lt</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+      <div class="media d-flex align-items-center">
+        <div class="face"></div>
+        <div class="wid">
+          <p class="margin-bottom">FB: Sociologijos akademija</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+      <div class="media d-flex align-items-center">
+        <div class="mail"></div>
+        <div class="wid">
+          <p class="margin-bottom">tel.: +370 000 00000</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 </html>
