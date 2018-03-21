@@ -9,9 +9,8 @@ body {
 img {
   width: 100%;
   height: auto; }
-/* 
+/*
 Content block
-
 */
 .content {
   width: 100%;
@@ -29,8 +28,13 @@ Content block
 
 .content__header {
   padding-top: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url(assets/images/IntBg.jpg);
   background-color: #4d4959;
   background-repeat: no-repeat;
@@ -56,7 +60,8 @@ Content block
 
 .content__breadcrumb {
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-  align-self: left;
+  -ms-flex-item-align: left;
+      align-self: left;
   color: white;
   z-index: 1;
   margin-top: 8%;
@@ -95,11 +100,20 @@ Content block
 
 .content__gallery {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .gallery__photo {
   width: 49%;

@@ -1,138 +1,144 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./navigation/style.css">
+  <title>Homepage</title>
 </head>
+
 <body>
-	<!-- NAVIGATION -->
-	<nav class="navbar navbar-expand-lg navigation">
-		<div class="navigation__logo navigation__logo--small">
-			<img src="images/logo.svg" alt="">
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
-			<div class="navbar-nav navigation__group">
-				<div class="nav-item dropdown">
-					<a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#">APIE MUS</a>
-						<a class="dropdown-item" href="#">KOMANDA</a>
-					</div>
-				</div>
-					<a href="" class="nav-item nav-link navigation__item">renginiai</a>
-					<a href="" class="nav-item nav-link navigation__item">galerija</a>
-					<div class="nav-item nav-link navigation__logo">
-						<img src="images/logo.svg" alt="">
-					</div>
-					<a href="" class="nav-item nav-link navigation__item">studijos</a>
-					<a href="" class="nav-item nav-link navigation__item">blogas</a>
-					<a href="" class="nav-item nav-link navigation__item">atsiliepimai</a>
-					<a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
-			</div>
-		</div>
-		<button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
-	</nav>
 
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navigation">
+    <div class="navigation__logo navigation__logo--small">
+      <a href="../homepage/index.html">
+        <img src="images/logo.svg" alt="">
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navigation__inside" id="navbarNavAltMarkup">
+      <div class="navbar-nav navigation__group">
+        <div class="nav-item dropdown">
+          <a href="" class="nav-item nav-link navigation__item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">apie</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="../apie-mus/index.html">APIE MUS</a>
+            <a class="dropdown-item" href="../komanda/index.html">KOMANDA</a>
+          </div>
+        </div>
+        <a href="../renginiai/index.html" class="nav-item nav-link navigation__item">renginiai</a>
+        <a href="../galerija/index.html" class="nav-item nav-link navigation__item">galerija</a>
+        <a href="../homepage/index.html">
+          <div class="nav-item nav-link navigation__logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+        </a>
+        <a href="../studijos/index.html" class="nav-item nav-link navigation__item">studijos</a>
+        <a href="../blog/index.html" class="nav-item nav-link navigation__item">blogas</a>
+        <a href="../homepage/index.html#atsiliepimai" class="nav-item nav-link navigation__item">atsiliepimai</a>
+        <a data-toggle="modal" data-target="#registracija" href="" class="nav-item nav-link navigation__item d-lg-none">registracija</a>
+      </div>
+    </div>
+    <button type="button" class="btn navigation__button" data-toggle="modal" data-target="#registracija">registruotis</button>
+  </nav>
 
-
-<div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <!-- REGISTRATION MODAL -->
+  <div class="modal fade" id="registracija" tabindex="-1" role="dialog" aria-labelledby="pavadinimas" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		<span aria-hidden="true">&times;</span>
 	</button>
-      <div class="modal-header">
-        <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
-      </div>
-      <div class="modal-body">
-        <form class="modal-form">
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Vardas:</label>
-            <input type="text" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Pavardė:</label>
-            <input type="text" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">El. Paštas:</label>
-            <input type="email" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
-            <input type="text" class="form-control" required>
-          </div>
-			<input type="submit" value="SIŲSTI" class="modal-button">
-        </form>
+        <div class="modal-header">
+          <h5 class="modal-title" id="pavadinimas">REGISTRACIJA</h5>
+        </div>
+        <div class="modal-body">
+          <form class="modal-form">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Vardas:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Pavardė:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">El. Paštas:</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Klasė, kurioje mokaisi:</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <input type="submit" value="SIŲSTI" class="modal-button">
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
-
-<section class="section section__pirma">
-	<h2 class="section__heading section__heading--pirma">sociologijos akademija</h1>
+  <section class="section section__pirma">
+    <h2 class="section__heading section__heading--pirma">sociologijos akademija</h1>
 </section>
 
 <section class="section section__antra">
 	<div class="section__content section__content--antra">
 	<h2 class="section__heading section__heading--antra">apie</h2>
-		<div class="section__video">
-			<img src="images/antra-video-play.png" class="section__video--play">
-		</div>
-		<div class="section__text">
-			<p>
-			Sociologijos akademija - Neformali 
-			organizacija, siekianti parodyti moksleiviams kasdienio gyvenimo aspektus iš sociologijos mokslo perspektyvos.
-			</p>
-			<span class="skaityti skaityti--antra">Skaityti daugiau</span>
-		</div>
-	</div>
-</section>
+    <div class="section__video">
+      <img src="images/antra-video-play.png" class="section__video--play">
+    </div>
+    <div class="section__text">
+      <p>
+        Sociologijos akademija - Neformali organizacija, siekianti parodyti moksleiviams kasdienio gyvenimo aspektus iš sociologijos mokslo perspektyvos.
+      </p>
+      <span class="skaityti skaityti--antra">Skaityti daugiau</span>
+    </div>
+    </div>
+  </section>
 
-<section class="section section__komanda">
-	<h2 class="section__heading section__heading--komanda">komanda</h2>
-	<div class="section__komanda__vidinis">
-		<div class="vidinis__person vidinis__person--first aktyvus">
-			<h3 class="vidinis__person--name">Aistė</h3>
-			<p class="vidinis__person--text">Studijuoju Vilniaus universitete sociologiją - labai įdomu, nesigailiu. Laivalaikiu mėgstu žiūrėti filmus, gaminti ir fotografuoti. Džiaugiuosi galėdama derinti ir mokslus, ir pomėgius, viskam skirdama laiko, kartais net juos jungdama“</p>
-			<div class="vidinis__person--pav">
-				<img src="images/nuotrauka1.jpg" alt="" class="vidinis__person--image">
-				<div class="vidinis__person--caption">aistė</div>
-			</div>
-		</div>
-		<div class="vidinis__person vidinis__person--second">
-			<h3 class="vidinis__person--name">Žmogus 1</h3>
-			<p class="vidinis__person--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non maximus tortor, ac rhoncus tellus. Nam eros risus, gravida eget accumsan non, mattis eget risus.“</p>
-			<div class="vidinis__person--pav">
-				<img src="images/nuotrauka2.jpg" alt="" class="vidinis__person--image">
-				<div class="vidinis__person--caption">Žmogus 1</div>
-			</div>
-		</div>
-		<div class="vidinis__person vidinis__person--third">
-			<h3 class="vidinis__person--name">Žmogus 2</h3>
-			<p class="vidinis__person--text">Quisque vulputate leo in velit semper, ut facilisis felis interdum. Pellentesque porttitor, purus euismod vulputate tempor, nisi dolor consectetur eros, eget interdum lectus velit in sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia“</p>
-			<div class="vidinis__person--pav">
-				<img src="images/noutrauka3.jpg" alt="" class="vidinis__person--image">
-				<div class="vidinis__person--caption">Žmogus 2</div>
-			</div>
-		</div>
-		<img src="images/arrow.svg" alt="" class="arrow left-arrow">
-		<img src="images/arrow.svg" alt="" class="arrow right arrow">
-	</div>
-	<span class="skaityti skaityti--komanda">Skaityti daugiau</span>
-</section>
+  <section class="section section__komanda">
+    <h2 class="section__heading section__heading--komanda">komanda</h2>
+    <div class="section__komanda__vidinis">
+      <div class="vidinis__person vidinis__person--first aktyvus">
+        <h3 class="vidinis__person--name">Aistė</h3>
+        <p class="vidinis__person--text">Studijuoju Vilniaus universitete sociologiją - labai įdomu, nesigailiu. Laivalaikiu mėgstu žiūrėti filmus, gaminti ir fotografuoti. Džiaugiuosi galėdama derinti ir mokslus, ir pomėgius, viskam skirdama laiko, kartais net juos jungdama“</p>
+        <div class="vidinis__person--pav">
+          <img src="images/nuotrauka1.jpg" alt="" class="vidinis__person--image">
+          <div class="vidinis__person--caption">aistė</div>
+        </div>
+      </div>
+      <div class="vidinis__person vidinis__person--second">
+        <h3 class="vidinis__person--name">Žmogus 1</h3>
+        <p class="vidinis__person--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non maximus tortor, ac rhoncus tellus. Nam eros risus, gravida eget accumsan non, mattis eget risus.“</p>
+        <div class="vidinis__person--pav">
+          <img src="images/nuotrauka2.jpg" alt="" class="vidinis__person--image">
+          <div class="vidinis__person--caption">Žmogus 1</div>
+        </div>
+      </div>
+      <div class="vidinis__person vidinis__person--third">
+        <h3 class="vidinis__person--name">Žmogus 2</h3>
+        <p class="vidinis__person--text">Quisque vulputate leo in velit semper, ut facilisis felis interdum. Pellentesque porttitor, purus euismod vulputate tempor, nisi dolor consectetur eros, eget interdum lectus velit in sapien. Vestibulum ante ipsum primis in faucibus orci luctus
+          et ultrices posuere cubilia“</p>
+        <div class="vidinis__person--pav">
+          <img src="images/noutrauka3.jpg" alt="" class="vidinis__person--image">
+          <div class="vidinis__person--caption">Žmogus 2</div>
+        </div>
+      </div>
+      <img src="images/arrow.svg" alt="" class="arrow left-arrow">
+      <img src="images/arrow.svg" alt="" class="arrow right arrow">
+    </div>
+    <span class="skaityti skaityti--komanda">Skaityti daugiau</span>
+  </section>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
